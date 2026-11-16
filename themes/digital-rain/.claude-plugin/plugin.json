@@ -1,7 +1,7 @@
 {
   "name": "digital-rain",
   "version": "0.1.0",
-  "description": "Columns of green glyphs falling behind the conversation, on near-black green.",
+  "description": "Matrix-style digital rain: green code columns falling behind the conversation, on near-black green.",
   "author": {
     "name": "ClaudeFolio",
     "url": "https://claudefolio.com"

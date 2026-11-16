@@ -4,7 +4,7 @@ Eight themes for the Claude Code desktop app. Seven paint the app dark and play 
 
 | | |
 |---|---|
-| ![Digital Rain](previews/digital-rain.gif)<br>**Digital Rain**: green glyph columns falling in two layers | ![Neon Horizon](previews/neon-horizon.gif)<br>**Neon Horizon**: a striped sun and a grid rolling toward you |
+| ![Digital Rain](previews/digital-rain.gif)<br>**Digital Rain**: Matrix-style digital rain, green code falling in two layers | ![Neon Horizon](previews/neon-horizon.gif)<br>**Neon Horizon**: a striped sun and a grid rolling toward you |
 | ![Braille Stars](previews/braille-stars.gif)<br>**Braille Stars**: twinkling braille-dot stars and a shooting star | ![Firefly Night](previews/firefly-night.gif)<br>**Firefly Night**: fireflies blinking at the edge of a pine forest |
 | ![Amber Terminal](previews/amber-terminal.gif)<br>**Amber Terminal**: log lines scrolling up an old amber CRT | ![Night Sakura](previews/night-sakura.gif)<br>**Night Sakura**: petals tumbling past a moonlit branch |
 | ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |

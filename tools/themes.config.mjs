@@ -14,8 +14,8 @@ export const THEMES = [
   {
     name: 'digital-rain',
     label: 'Digital Rain',
-    description: 'Columns of green glyphs falling behind the conversation, on near-black green.',
-    alt: 'Columns of green glyphs falling like rain',
+    description: 'Matrix-style digital rain: green code columns falling behind the conversation, on near-black green.',
+    alt: 'Matrix-style green code rain falling behind the conversation',
     tint: '#030805',
     opacity: 0.55,
     roles: { accent: '#39e58c', danger: '#ff5f6d', success: '#7be37b', warning: '#e6c84f', pro: '#9b8cff' },

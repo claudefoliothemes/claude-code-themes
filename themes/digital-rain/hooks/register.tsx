@@ -71,6 +71,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="Columns of green glyphs falling like rain" />
+    return <Svg source={SCENE} alt="Matrix-style green code rain falling behind the conversation" />
   })
 }
