@@ -1,0 +1,15 @@
+{
+  "name": "amber-terminal",
+  "version": "0.1.0",
+  "description": "An old amber CRT: scrolling log lines, scanlines, and a blinking cursor.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
