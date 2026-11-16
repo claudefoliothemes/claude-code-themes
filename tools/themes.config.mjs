@@ -71,4 +71,27 @@ export const THEMES = [
     roles: { accent: '#ff8fc0', danger: '#ff5c6c', success: '#7fd8a4', warning: '#ffcf66', pro: '#a99bff' },
     anchors: { 'surface-0': '#0d0b16', 'surface-1': '#13101f', 'surface-2': '#191427', 'surface-3': '#1d172e', 'text-primary': '#fbeef5', 'text-secondary': '#e4c9d8', 'text-muted': '#b494a8' },
   },
+  {
+    name: 'holiday-lights',
+    label: 'Holiday Lights',
+    description: 'String lights blinking over a snowy night, with a lit pine and falling snow.',
+    alt: 'Holiday string lights blinking over a snowy night with a lit pine tree',
+    tint: '#08121a',
+    opacity: 0.5,
+    roles: { accent: '#e8b84a', danger: '#ff5a5f', success: '#3ccf7e', warning: '#ffb347', pro: '#7fb2ff' },
+    anchors: { 'surface-0': '#08121a', 'surface-1': '#0c1821', 'surface-2': '#101e29', 'surface-3': '#132230', 'text-primary': '#eef4f8', 'text-secondary': '#c6d3dc', 'text-muted': '#90a3b1' },
+  },
+  {
+    // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
+    // only shape the preview's mock window.
+    name: 'clean-slate',
+    label: 'Clean Slate',
+    mode: 'light',
+    description: 'A quiet light theme in white and soft gray, with a still backdrop and nothing moving.',
+    ground: { gradient: { stops: ['#fbfbfc', '#e9ecef'], angle: 180 } },
+    tint: '#f4f5f7',
+    opacity: 0.7,
+    roles: { accent: '#4a5568', danger: '#c53030', success: '#2f855a', warning: '#b7791f', pro: '#6b46c1' },
+    anchors: { 'surface-0': '#eceef1', 'surface-1': '#f4f5f7', 'surface-2': '#fbfbfc', 'text-primary': '#1d2127', 'text-secondary': '#454b55', 'text-muted': '#5f6672' },
+  },
 ]

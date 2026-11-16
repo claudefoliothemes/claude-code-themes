@@ -1,13 +1,42 @@
 {
   "name": "claudefolio-themes",
-  "owner": { "name": "ClaudeFolio", "url": "https://claudefolio.com" },
-  "description": "Animated themes for the Claude Code desktop app: dark colors plus a moving scene behind the conversation.",
+  "owner": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "description": "Animated themes and one clean still theme for the Claude Code desktop app.",
   "plugins": [
-    { "name": "digital-rain", "source": "./themes/digital-rain" },
-    { "name": "braille-stars", "source": "./themes/braille-stars" },
-    { "name": "neon-horizon", "source": "./themes/neon-horizon" },
-    { "name": "firefly-night", "source": "./themes/firefly-night" },
-    { "name": "amber-terminal", "source": "./themes/amber-terminal" },
-    { "name": "night-sakura", "source": "./themes/night-sakura" }
+    {
+      "name": "digital-rain",
+      "source": "./themes/digital-rain"
+    },
+    {
+      "name": "braille-stars",
+      "source": "./themes/braille-stars"
+    },
+    {
+      "name": "neon-horizon",
+      "source": "./themes/neon-horizon"
+    },
+    {
+      "name": "firefly-night",
+      "source": "./themes/firefly-night"
+    },
+    {
+      "name": "amber-terminal",
+      "source": "./themes/amber-terminal"
+    },
+    {
+      "name": "night-sakura",
+      "source": "./themes/night-sakura"
+    },
+    {
+      "name": "holiday-lights",
+      "source": "./themes/holiday-lights"
+    },
+    {
+      "name": "clean-slate",
+      "source": "./themes/clean-slate"
+    }
   ]
 }

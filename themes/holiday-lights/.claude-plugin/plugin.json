@@ -1,0 +1,15 @@
+{
+  "name": "holiday-lights",
+  "version": "0.1.0",
+  "description": "String lights blinking over a snowy night, with a lit pine and falling snow.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

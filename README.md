@@ -1,12 +1,13 @@
 # Claude Code themes from ClaudeFolio
 
-Six animated themes for the Claude Code desktop app. Each one paints the app in a dark palette and draws a moving scene behind your conversation. They are built to stay light: each one keeps the app's CPU use close to idle.
+Eight themes for the Claude Code desktop app. Seven paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
 | ![Digital Rain](previews/digital-rain.gif)<br>**Digital Rain**: green glyph columns falling in two layers | ![Neon Horizon](previews/neon-horizon.gif)<br>**Neon Horizon**: a striped sun and a grid rolling toward you |
 | ![Braille Stars](previews/braille-stars.gif)<br>**Braille Stars**: twinkling braille-dot stars and a shooting star | ![Firefly Night](previews/firefly-night.gif)<br>**Firefly Night**: fireflies blinking at the edge of a pine forest |
 | ![Amber Terminal](previews/amber-terminal.gif)<br>**Amber Terminal**: log lines scrolling up an old amber CRT | ![Night Sakura](previews/night-sakura.gif)<br>**Night Sakura**: petals tumbling past a moonlit branch |
+| ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |
 
 The chat in these previews is made up, to show the colors.
 
@@ -18,7 +19,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal` or `night-sakura`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights` or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -34,7 +35,7 @@ claude plugin enable neon-horizon@claudefolio-themes
 
 - The Claude desktop app (Code tab) or the Claude mobile app. The terminal keeps its own look.
 - Claude Code 2.1.324 or later.
-- Dark mode. These are dark themes.
+- Dark mode for every theme except Clean Slate, which needs light mode.
 - **Windows:** turn on Settings > Personalization > Colors > **Transparency effects**. With it off, the app makes its glass fully opaque and hides the scene, so you see the colors but no backdrop.
 - **macOS:** turn off System Settings > Accessibility > Display > **Reduce transparency**, for the same reason.
 
@@ -49,9 +50,11 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Digital Rain | 0.44 |
 | Neon Horizon | 0.32 |
 | Braille Stars | 0.29 |
-| Firefly Night | 0.29 |
+| Firefly Night | 0.26 |
 | Amber Terminal | 0.25 |
+| Holiday Lights | 0.25 |
 | Night Sakura | 0.17 |
+| Clean Slate | nothing moves |
 
 If your system asks apps to reduce motion, every scene holds still.
 
@@ -65,7 +68,7 @@ If your system asks apps to reduce motion, every scene holds still.
 
 ## Make your own
 
-The scenes are plain SVG built by small scripts in `tools/scenes/`, and one build script turns each into a mod:
+The scenes are plain SVG built by small scripts in `tools/scenes/`, and one build script turns each into a mod, from the palettes in `tools/themes.config.mjs`:
 
 ```
 node tools/build-themes.mjs --out themes

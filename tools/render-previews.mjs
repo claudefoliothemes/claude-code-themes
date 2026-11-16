@@ -27,29 +27,37 @@ const SECONDS = 6
 const STILL_AT = 2.0
 const only = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null
 
+// A still theme's ground as CSS, as the app would draw it; scene themes paint over it anyway.
+const ground = (t) => {
+  const g = t.ground
+  if (g?.gradient) return `linear-gradient(${g.gradient.angle ?? 180}deg,${g.gradient.stops.join(',')})`
+  return g?.color ?? t.anchors['surface-0']
+}
+
 const page = (t, svg) => {
   const a = t.anchors, r = t.roles
+  const line = a['surface-3'] ?? a['surface-0'] // borders; a light palette may leave surface-3 out
   const glass = (alpha) => `${t.tint}${Math.round(alpha * 255).toString(16).padStart(2, '0')}`
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 *{box-sizing:border-box;margin:0}
 html,body{width:${W}px;height:${H}px;overflow:hidden;background:${a['surface-0']};font:15px/1.55 "Segoe UI",system-ui,sans-serif;color:${a['text-primary']}}
 .scene{position:fixed;inset:0}.scene svg{width:100%;height:100%;display:block}
 .app{position:fixed;inset:0;display:grid;grid-template-columns:260px 1fr}
-.side{background:${glass(Math.min(1, t.opacity + 0.15))};border-right:1px solid ${a['surface-3']};padding:22px 14px}
+.side{background:${glass(Math.min(1, t.opacity + 0.15))};border-right:1px solid ${line};padding:22px 14px}
 .side h4{font-size:12px;letter-spacing:.04em;color:${a['text-muted']};font-weight:600;margin:4px 8px 12px}
 .side div{padding:8px 10px;border-radius:8px;color:${a['text-secondary']};font-size:14px;margin-bottom:2px}
 .side .on{background:${a['surface-2']};color:${a['text-primary']}}
 .main{background:${glass(t.opacity)};display:flex;flex-direction:column;align-items:center;padding:40px 0 28px}
 .col{width:760px;flex:1;display:flex;flex-direction:column;gap:18px}
 .user{align-self:flex-end;max-width:70%;background:${a['surface-2']};padding:10px 16px;border-radius:14px}
-.tool{font:13px Consolas,monospace;color:${a['text-secondary']};background:${a['surface-1']};border:1px solid ${a['surface-3']};border-radius:10px;padding:10px 14px}
+.tool{font:13px Consolas,monospace;color:${a['text-secondary']};background:${a['surface-1']};border:1px solid ${line};border-radius:10px;padding:10px 14px}
 .tool b{color:${a['text-primary']};font-weight:600}.add{color:${r.success}}.del{color:${r.danger}}
-pre{font:14px/1.6 Consolas,monospace;background:${a['surface-1']};border:1px solid ${a['surface-3']};border-radius:10px;padding:14px 16px;color:${a['text-primary']}}
+pre{font:14px/1.6 Consolas,monospace;background:${a['surface-1']};border:1px solid ${line};border-radius:10px;padding:14px 16px;color:${a['text-primary']}}
 .k{color:${r.accent}}.s{color:${r.success}}.n{color:${r.pro}}.v{color:${r.warning}}.c{color:${a['text-muted']}}
-.prompt{width:760px;background:${a['surface-1']};border:1px solid ${a['surface-3']};border-radius:14px;padding:16px 18px;color:${a['text-muted']}}
-.tag{position:fixed;right:22px;bottom:18px;font-size:13px;color:${a['text-secondary']};background:${glass(0.85)};padding:6px 12px;border-radius:20px;border:1px solid ${a['surface-3']}}
+.prompt{width:760px;background:${a['surface-1']};border:1px solid ${line};border-radius:14px;padding:16px 18px;color:${a['text-muted']}}
+.tag{position:fixed;right:22px;bottom:18px;font-size:13px;color:${a['text-secondary']};background:${glass(0.85)};padding:6px 12px;border-radius:20px;border:1px solid ${line}}
 </style></head><body>
-<div class="scene">${svg}</div>
+<div class="scene" style="background:${ground(t)}">${svg}</div>
 <div class="app">
   <div class="side"><h4>Sessions</h4><div class="on">Add upload spinner</div><div>Fix flaky date test</div><div>Write release notes</div><div>Tidy the settings page</div></div>
   <div class="main"><div class="col">
@@ -109,7 +117,7 @@ try {
   await cdp.send('Page.enable')
   await cdp.send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false })
   for (const t of THEMES.filter((x) => !only || x.name === only)) {
-    const svg = (await import(pathToFileURL(join(TOOLS, 'scenes', `${t.name}.mjs`)).href)).default()
+    const svg = t.ground ? '' : (await import(pathToFileURL(join(TOOLS, 'scenes', `${t.name}.mjs`)).href)).default()
     const html = join(work, `${t.name}.html`)
     writeFileSync(html, page(t, svg))
     const loaded = cdp.once('Page.loadEventFired')
