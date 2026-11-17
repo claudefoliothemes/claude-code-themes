@@ -2,3 +2,5 @@ node_modules/
 .claude-plugin/types/
 */.claude-plugin/types/
 themes/*/.claude-plugin/types/
+.env
+dist/

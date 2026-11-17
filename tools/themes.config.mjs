@@ -2,6 +2,9 @@
 
 export const VERSION = '0.1.0'
 
+// The public repo the themes are published from (see tools/release-themes.mjs).
+export const REPO = 'claudefoliothemes/claude-code-themes'
+
 // Written into every theme's plugin.json.
 export const PUBLISHER = {
   author: { name: 'ClaudeFolio', url: 'https://claudefolio.com' },

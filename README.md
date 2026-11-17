@@ -79,6 +79,8 @@ node tools/build-themes.mjs --out themes
 
 `tools/render-previews.mjs` renders the previews. It needs Chrome and an ffmpeg with libx264.
 
+Themes install from zips on the [GitHub releases](https://github.com/claudefoliothemes/claude-code-themes/releases), so each zip's download count shows how often that theme is installed. `node tools/release-themes.mjs --publish` builds the zips, uploads any new ones, and points the marketplace at them. It needs a `GITHUB_TOKEN` with write access to the repo. An uploaded zip is never replaced: to ship a change, bump `VERSION` in `tools/themes.config.mjs` and rebuild.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

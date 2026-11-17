@@ -8,43 +8,83 @@
   "plugins": [
     {
       "name": "digital-rain",
-      "source": "./themes/digital-rain"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/digital-rain-0.1.0.zip",
+        "sha256": "59fba864908d11831c420b670cf206fa134fbf2f6143ce051461223f0a76552f"
+      }
     },
     {
       "name": "braille-stars",
-      "source": "./themes/braille-stars"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/braille-stars-0.1.0.zip",
+        "sha256": "99fad57d485a1d14d544e844ac0fc3ea2dc60aed50221b0f1096c41824e4fc04"
+      }
     },
     {
       "name": "neon-horizon",
-      "source": "./themes/neon-horizon"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/neon-horizon-0.1.0.zip",
+        "sha256": "4a01d8670ad429c7220c377d2d3a4be15f282fa7e8c543d87c99c9b84ca19487"
+      }
     },
     {
       "name": "firefly-night",
-      "source": "./themes/firefly-night"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/firefly-night-0.1.0.zip",
+        "sha256": "9112566be15dc5c65c8f1d992ee56bb1e5a8a923bf865e340d48a8a309c4708b"
+      }
     },
     {
       "name": "amber-terminal",
-      "source": "./themes/amber-terminal"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/amber-terminal-0.1.0.zip",
+        "sha256": "f366bd40eead91bfcfe0f64acca944c459678376dd7a9a5673a196d69d3d1655"
+      }
     },
     {
       "name": "night-sakura",
-      "source": "./themes/night-sakura"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/night-sakura-0.1.0.zip",
+        "sha256": "93a7a323d2bd4aaf1a2f3e3f5bf1e0c369a60668eef942da74db7467bc004df7"
+      }
     },
     {
       "name": "holiday-lights",
-      "source": "./themes/holiday-lights"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/holiday-lights-0.1.0.zip",
+        "sha256": "7bc2b059bdd4ee82012013b14c71ba53a09507829fcc57e7a11b0cd486d20dbe"
+      }
     },
     {
       "name": "lofi-rain",
-      "source": "./themes/lofi-rain"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/lofi-rain-0.1.0.zip",
+        "sha256": "9d936b66eca6d0976a1fb784862b6d5ea516ce28145f3579d6e76ff0cede8e91"
+      }
     },
     {
       "name": "pastel-nebula",
-      "source": "./themes/pastel-nebula"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pastel-nebula-0.1.0.zip",
+        "sha256": "dd68c2aa31456578e90e061087f8a88d7c7bd78aa673fc7462cf928a0f54e003"
+      }
     },
     {
       "name": "clean-slate",
-      "source": "./themes/clean-slate"
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/clean-slate-0.1.0.zip",
+        "sha256": "cc8ffc979e92b6c57177c4a85af01b47681e11731c04bee5ee009e4b78b65f6d"
+      }
     }
   ]
 }
