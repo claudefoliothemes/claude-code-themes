@@ -1,12 +1,13 @@
 # Claude Code themes from ClaudeFolio
 
-Eight themes for the Claude Code desktop app. Seven paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Ten themes for the Claude Code desktop app. Nine paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
 | ![Digital Rain](previews/digital-rain.gif)<br>**Digital Rain**: Matrix-style digital rain, green code falling in two layers | ![Neon Horizon](previews/neon-horizon.gif)<br>**Neon Horizon**: a striped sun and a grid rolling toward you |
 | ![Braille Stars](previews/braille-stars.gif)<br>**Braille Stars**: twinkling braille-dot stars and a shooting star | ![Firefly Night](previews/firefly-night.gif)<br>**Firefly Night**: fireflies blinking at the edge of a pine forest |
 | ![Amber Terminal](previews/amber-terminal.gif)<br>**Amber Terminal**: log lines scrolling up an old amber CRT | ![Night Sakura](previews/night-sakura.gif)<br>**Night Sakura**: petals tumbling past a moonlit branch |
+| ![Lofi Rain](previews/lofi-rain.gif)<br>**Lofi Rain**: a lofi rainy window, city lights, and a steaming mug | ![Pastel Nebula](previews/pastel-nebula.gif)<br>**Pastel Nebula**: pastel clouds, a ringed planet, and shooting stars |
 | ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |
 
 The chat in these previews is made up, to show the colors.
@@ -19,7 +20,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights` or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `lofi-rain`, `pastel-nebula`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -50,6 +51,8 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Digital Rain | 0.44 |
 | Neon Horizon | 0.32 |
 | Braille Stars | 0.29 |
+| Lofi Rain | 0.28 |
+| Pastel Nebula | 0.26 |
 | Firefly Night | 0.26 |
 | Amber Terminal | 0.25 |
 | Holiday Lights | 0.25 |

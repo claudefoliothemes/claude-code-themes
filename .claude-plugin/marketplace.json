@@ -35,6 +35,14 @@
       "source": "./themes/holiday-lights"
     },
     {
+      "name": "lofi-rain",
+      "source": "./themes/lofi-rain"
+    },
+    {
+      "name": "pastel-nebula",
+      "source": "./themes/pastel-nebula"
+    },
+    {
       "name": "clean-slate",
       "source": "./themes/clean-slate"
     }

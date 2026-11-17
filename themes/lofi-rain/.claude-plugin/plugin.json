@@ -1,0 +1,15 @@
+{
+  "name": "lofi-rain",
+  "version": "0.1.0",
+  "description": "A lofi rainy night through a window: city lights in the blur, rain on the glass, and a mug steaming on the sill.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

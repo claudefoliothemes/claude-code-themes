@@ -82,6 +82,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#08121a', 'surface-1': '#0c1821', 'surface-2': '#101e29', 'surface-3': '#132230', 'text-primary': '#eef4f8', 'text-secondary': '#c6d3dc', 'text-muted': '#90a3b1' },
   },
   {
+    name: 'lofi-rain',
+    label: 'Lofi Rain',
+    description: 'A lofi rainy night through a window: city lights in the blur, rain on the glass, and a mug steaming on the sill.',
+    alt: 'Rain running down a window at night, with soft city lights and a steaming mug on the sill',
+    tint: '#12131f',
+    opacity: 0.5,
+    roles: { accent: '#7fa6ff', danger: '#ff6e86', success: '#9ed36f', warning: '#ffb070', pro: '#c39bff' },
+    anchors: { 'surface-0': '#12131f', 'surface-1': '#171826', 'surface-2': '#1c1d2e', 'surface-3': '#202234', 'text-primary': '#e3e7fb', 'text-secondary': '#bac0dd', 'text-muted': '#8d93b6' },
+  },
+  {
+    name: 'pastel-nebula',
+    label: 'Pastel Nebula',
+    description: 'Soft pastel nebula clouds, a ringed planet, twinkling stars, and the odd shooting star.',
+    alt: 'Pastel nebula clouds around a ringed planet, with twinkling stars and a shooting star',
+    tint: '#16141f',
+    opacity: 0.5,
+    roles: { accent: '#c9a7ff', danger: '#f590ac', success: '#a8e3a4', warning: '#f8dfa8', pro: '#8fb7fb' },
+    anchors: { 'surface-0': '#16141f', 'surface-1': '#1b1928', 'surface-2': '#201e30', 'surface-3': '#242236', 'text-primary': '#ece8fb', 'text-secondary': '#c9c3e3', 'text-muted': '#9c96bf' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

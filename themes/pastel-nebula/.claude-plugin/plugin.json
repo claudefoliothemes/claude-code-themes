@@ -1,0 +1,15 @@
+{
+  "name": "pastel-nebula",
+  "version": "0.1.0",
+  "description": "Soft pastel nebula clouds, a ringed planet, twinkling stars, and the odd shooting star.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
