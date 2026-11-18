@@ -105,6 +105,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#16141f', 'surface-1': '#1b1928', 'surface-2': '#201e30', 'surface-3': '#242236', 'text-primary': '#ece8fb', 'text-secondary': '#c9c3e3', 'text-muted': '#9c96bf' },
   },
   {
+    name: 'ink-wave',
+    label: 'Ink Wave',
+    description: 'Woodblock-print ocean waves in indigo and cream, rolling past a red sun and a snowcapped peak.',
+    alt: 'Indigo woodblock-print waves with cream crests rolling past a red sun and a snowcapped peak',
+    tint: '#16161d',
+    opacity: 0.5,
+    roles: { accent: '#7e9cd8', danger: '#e46876', success: '#98bb6c', warning: '#e6c384', pro: '#957fb8' },
+    anchors: { 'surface-0': '#16161d', 'surface-1': '#1a1a22', 'surface-2': '#1f1f28', 'surface-3': '#23232d', 'text-primary': '#dcd7ba', 'text-secondary': '#c8c3a6', 'text-muted': '#9a957f' },
+  },
+  {
+    name: 'fireside',
+    label: 'Fireside',
+    description: 'A cozy fire crackling in a stone hearth, embers drifting up, snow at the window, and a cat asleep by the fire.',
+    alt: 'A fire crackling in a stone hearth with candles on the mantel, snow at the window, and a sleeping cat',
+    tint: '#191724',
+    opacity: 0.5,
+    roles: { accent: '#f6c177', danger: '#eb6f92', success: '#9ccfa3', warning: '#f2a65a', pro: '#c4a7e7' },
+    anchors: { 'surface-0': '#191724', 'surface-1': '#1d1b2a', 'surface-2': '#211f30', 'surface-3': '#262337', 'text-primary': '#e0def4', 'text-secondary': '#c3c0da', 'text-muted': '#908caa' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

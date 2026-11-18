@@ -79,6 +79,22 @@
       }
     },
     {
+      "name": "ink-wave",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/ink-wave-0.1.0.zip",
+        "sha256": "212490ac1ce9a620624b96295a2666479af2b3ea894e97a9c8b676eaf595a426"
+      }
+    },
+    {
+      "name": "fireside",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/fireside-0.1.0.zip",
+        "sha256": "4b732b11c5b627267303eaccd01eb80cdfc699720fda6a9a71571b6876d0dbd3"
+      }
+    },
+    {
       "name": "clean-slate",
       "source": {
         "source": "archive",

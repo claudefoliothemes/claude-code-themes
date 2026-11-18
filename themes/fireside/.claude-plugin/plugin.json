@@ -1,0 +1,15 @@
+{
+  "name": "fireside",
+  "version": "0.1.0",
+  "description": "A cozy fire crackling in a stone hearth, embers drifting up, snow at the window, and a cat asleep by the fire.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

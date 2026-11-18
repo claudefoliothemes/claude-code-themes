@@ -1,0 +1,15 @@
+{
+  "name": "ink-wave",
+  "version": "0.1.0",
+  "description": "Woodblock-print ocean waves in indigo and cream, rolling past a red sun and a snowcapped peak.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
