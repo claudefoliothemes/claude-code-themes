@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Twelve themes for the Claude Code desktop app. Eleven paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Fourteen themes for the Claude Code desktop app. Thirteen paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -9,6 +9,7 @@ Twelve themes for the Claude Code desktop app. Eleven paint the app dark and pla
 | ![Amber Terminal](previews/amber-terminal.gif)<br>**Amber Terminal**: log lines scrolling up an old amber CRT | ![Night Sakura](previews/night-sakura.gif)<br>**Night Sakura**: petals tumbling past a moonlit branch |
 | ![Lofi Rain](previews/lofi-rain.gif)<br>**Lofi Rain**: a lofi rainy window, city lights, and a steaming mug | ![Pastel Nebula](previews/pastel-nebula.gif)<br>**Pastel Nebula**: pastel clouds, a ringed planet, and shooting stars |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
+| ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
 | ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |
 
 The chat in these previews is made up, to show the colors.
@@ -21,7 +22,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `lofi-rain`, `pastel-nebula`, `ink-wave`, `fireside`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `lofi-rain`, `pastel-nebula`, `ink-wave`, `fireside`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -58,6 +59,8 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Firefly Night | 0.26 |
 | Amber Terminal | 0.25 |
 | Holiday Lights | 0.25 |
+| Sleigh Ride | 0.25 |
+| Rooftop Santa | 0.21 |
 | Fireside | 0.18 |
 | Night Sakura | 0.17 |
 | Clean Slate | nothing moves |

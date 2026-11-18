@@ -63,6 +63,22 @@
       }
     },
     {
+      "name": "rooftop-santa",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/rooftop-santa-0.1.0.zip",
+        "sha256": "8320478eb64109efff7df8e14850f6c0269d9b1e7ef03b7ce9b9c393b91fbdfc"
+      }
+    },
+    {
+      "name": "sleigh-ride",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/sleigh-ride-0.1.0.zip",
+        "sha256": "b597960f2504b72c32909b4f27f66ee87e75941f3d3a8552272ffa50a7161865"
+      }
+    },
+    {
       "name": "lofi-rain",
       "source": {
         "source": "archive",

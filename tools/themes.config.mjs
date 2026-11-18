@@ -125,6 +125,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#191724', 'surface-1': '#1d1b2a', 'surface-2': '#211f30', 'surface-3': '#262337', 'text-primary': '#e0def4', 'text-secondary': '#c3c0da', 'text-muted': '#908caa' },
   },
   {
+    name: 'rooftop-santa',
+    label: 'Rooftop Santa',
+    description: 'Santa waving from a snowy rooftop beside the chimney, with his sack of gifts, string lights, and falling snow.',
+    alt: 'Santa waving on a snowy rooftop beside a chimney, with string lights and falling snow',
+    tint: '#0b1226',
+    opacity: 0.5,
+    roles: { accent: '#e8584f', danger: '#ff7b8b', success: '#3ccf7e', warning: '#f0b84a', pro: '#8fb1ff' },
+    anchors: { 'surface-0': '#0b1226', 'surface-1': '#0f172e', 'surface-2': '#131d37', 'surface-3': '#17223f', 'text-primary': '#eef3fb', 'text-secondary': '#c7d2e6', 'text-muted': '#93a2bd' },
+  },
+  {
+    name: 'sleigh-ride',
+    label: 'Sleigh Ride',
+    description: "Santa's sleigh and a team of reindeer flying across a full moon, the lead reindeer's red nose glowing.",
+    alt: "Santa's sleigh pulled by flying reindeer across a full moon, the lead reindeer's red nose glowing",
+    tint: '#0a1024',
+    opacity: 0.5,
+    roles: { accent: '#f3c969', danger: '#ff5a5f', success: '#4fd18b', warning: '#ffb347', pro: '#8fb1ff' },
+    anchors: { 'surface-0': '#0a1024', 'surface-1': '#0e152d', 'surface-2': '#121b36', 'surface-3': '#151f3d', 'text-primary': '#f2f0e6', 'text-secondary': '#cfd3e0', 'text-muted': '#98a0b8' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

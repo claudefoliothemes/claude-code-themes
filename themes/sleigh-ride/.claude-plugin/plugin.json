@@ -1,0 +1,15 @@
+{
+  "name": "sleigh-ride",
+  "version": "0.1.0",
+  "description": "Santa's sleigh and a team of reindeer flying across a full moon, the lead reindeer's red nose glowing.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

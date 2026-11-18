@@ -1,0 +1,15 @@
+{
+  "name": "rooftop-santa",
+  "version": "0.1.0",
+  "description": "Santa waving from a snowy rooftop beside the chimney, with his sack of gifts, string lights, and falling snow.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
