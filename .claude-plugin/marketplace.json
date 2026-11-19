@@ -87,6 +87,14 @@
       }
     },
     {
+      "name": "lantern-alley",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/lantern-alley-0.1.0.zip",
+        "sha256": "d092292acf21244ed0b332ba9ee21cb9c9ddaea1b798f77145f467093fd0c50c"
+      }
+    },
+    {
       "name": "pastel-nebula",
       "source": {
         "source": "archive",
@@ -108,6 +116,14 @@
         "source": "archive",
         "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/fireside-0.1.0.zip",
         "sha256": "4b732b11c5b627267303eaccd01eb80cdfc699720fda6a9a71571b6876d0dbd3"
+      }
+    },
+    {
+      "name": "pixel-camp",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-camp-0.1.0.zip",
+        "sha256": "0b999558969336a4de0d35f9a0adb1ef5ee46f644ecc64c7050de54297ed4eb9"
       }
     },
     {

@@ -1,0 +1,15 @@
+{
+  "name": "lantern-alley",
+  "version": "0.1.0",
+  "description": "A rainy Japanese street at night: paper lanterns swaying, warm shop windows, a glowing vending machine, and puddles rippling.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

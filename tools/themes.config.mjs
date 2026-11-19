@@ -145,6 +145,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#0a1024', 'surface-1': '#0e152d', 'surface-2': '#121b36', 'surface-3': '#151f3d', 'text-primary': '#f2f0e6', 'text-secondary': '#cfd3e0', 'text-muted': '#98a0b8' },
   },
   {
+    name: 'lantern-alley',
+    label: 'Lantern Alley',
+    description: 'A rainy Japanese street at night: paper lanterns swaying, warm shop windows, a glowing vending machine, and puddles rippling.',
+    alt: 'Red paper lanterns swaying over a rainy Japanese street at night, with a glowing vending machine and puddles',
+    tint: '#100d1c',
+    opacity: 0.5,
+    roles: { accent: '#ff8a5c', danger: '#ff5c7a', success: '#7fd6a4', warning: '#ffcc66', pro: '#b59cff' },
+    anchors: { 'surface-0': '#100d1c', 'surface-1': '#151124', 'surface-2': '#1a152c', 'surface-3': '#1e1932', 'text-primary': '#f3ece6', 'text-secondary': '#d6cbc4', 'text-muted': '#a5988f' },
+  },
+  {
+    name: 'pixel-camp',
+    label: 'Pixel Camp',
+    description: 'A pixel-art campsite at night: a crackling fire, sparks drifting up, a lit tent, an owl that blinks, and twinkling stars.',
+    alt: 'Pixel-art campsite at night with a campfire, a lit tent, pine trees, an owl, and a pixel moon',
+    tint: '#1e2326',
+    opacity: 0.5,
+    roles: { accent: '#a7c080', danger: '#e67e80', success: '#83c092', warning: '#dbbc7f', pro: '#d699b6' },
+    anchors: { 'surface-0': '#1e2326', 'surface-1': '#232a2e', 'surface-2': '#272e33', 'surface-3': '#2a3237', 'text-primary': '#ebe2cb', 'text-secondary': '#cfc5ab', 'text-muted': '#a3aea6' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',
