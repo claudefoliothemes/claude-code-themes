@@ -7,14 +7,24 @@
 // Needs Chrome (drives it headless over the DevTools protocol; CHROME env var to point at it) and
 // ffmpeg with libx264 (FFMPEG env var, else ffmpeg on PATH).
 import { spawn, spawnSync } from 'node:child_process'
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { THEMES } from './themes.config.mjs'
+import { THEMES as PUBLIC_THEMES } from './themes.config.mjs'
 
 const TOOLS = dirname(fileURLToPath(import.meta.url))
+
+// Private themes (tools/private-themes.config.mjs, scenes in tools/scenes-private/) build only
+// into this folder, never into another --out such as the public repo, which doesn't carry them.
+const privateThemes = async (include) => {
+  const file = join(TOOLS, 'private-themes.config.mjs')
+  if (!include || !existsSync(file)) return []
+  return (await import(pathToFileURL(file).href)).THEMES.map((t) => ({ ...t, private: true }))
+}
+const sceneFile = (t) => join(TOOLS, t.private ? 'scenes-private' : 'scenes', `${t.name}.mjs`)
+const THEMES = [...PUBLIC_THEMES, ...(await privateThemes(true))]
 const OUT = join(TOOLS, '..', 'previews')
 const CHROME = process.env.CHROME ?? {
   win32: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -23,6 +33,7 @@ const CHROME = process.env.CHROME ?? {
 const FFMPEG = process.env.FFMPEG ?? 'ffmpeg'
 const W = 1600, H = 1000
 const FPS = 10 // every scene steps on a 0.1 s tick, so 10 fps shows every state
+// A theme can override these (and pass options to its scene) with a `preview` entry in the config.
 const SECONDS = 6
 const STILL_AT = 2.0
 const only = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null
@@ -117,7 +128,8 @@ try {
   await cdp.send('Page.enable')
   await cdp.send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false })
   for (const t of THEMES.filter((x) => !only || x.name === only)) {
-    const svg = t.ground ? '' : (await import(pathToFileURL(join(TOOLS, 'scenes', `${t.name}.mjs`)).href)).default()
+    const svg = t.ground ? '' : (await import(pathToFileURL(sceneFile(t)).href)).default(t.preview?.scene)
+    const seconds = t.preview?.seconds ?? SECONDS, stillAt = t.preview?.stillAt ?? STILL_AT
     const html = join(work, `${t.name}.html`)
     writeFileSync(html, page(t, svg))
     const loaded = cdp.once('Page.loadEventFired')
@@ -134,11 +146,11 @@ try {
       writeFileSync(file, Buffer.from(data, 'base64'))
     }
     // Sample mid-tick: the scenes change exactly on tick boundaries.
-    for (let i = 0; i < FPS * SECONDS; i++) await shoot(10.05 + i / FPS, join(frames, `f${String(i).padStart(3, '0')}.png`))
-    await shoot(10.05 + STILL_AT, join(frames, 'still.png'))
+    for (let i = 0; i < FPS * seconds; i++) await shoot(10.05 + i / FPS, join(frames, `f${String(i).padStart(3, '0')}.png`))
+    await shoot(10.05 + stillAt, join(frames, 'still.png'))
     // The listing icon: the scene alone, cropped square.
     await cdp.send('Runtime.evaluate', { expression: `document.querySelectorAll('.app,.tag').forEach(e => e.style.display = 'none')` })
-    await shoot(10.05 + STILL_AT, join(frames, 'scene.png'))
+    await shoot(10.05 + stillAt, join(frames, 'scene.png'))
     const ff = (args) => {
       const r = spawnSync(FFMPEG, ['-y', '-loglevel', 'error', ...args])
       if (r.status !== 0) throw new Error(`ffmpeg: ${r.stderr}`)

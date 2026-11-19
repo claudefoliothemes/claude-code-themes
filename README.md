@@ -1,9 +1,10 @@
 # Claude Code themes from ClaudeFolio
 
-Sixteen themes for the Claude Code desktop app. Fifteen paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Seventeen themes for the Claude Code desktop app. Sixteen paint the app dark and play a moving scene behind your conversation; one, Clean Slate, is a calm light theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
+| ![Sky Clock](previews/sky-clock.gif)<br>**Sky Clock**: the sky follows your computer's clock, from dawn to a starry night | |
 | ![Digital Rain](previews/digital-rain.gif)<br>**Digital Rain**: Matrix-style digital rain, green code falling in two layers | ![Neon Horizon](previews/neon-horizon.gif)<br>**Neon Horizon**: a striped sun and a grid rolling toward you |
 | ![Braille Stars](previews/braille-stars.gif)<br>**Braille Stars**: twinkling braille-dot stars and a shooting star | ![Firefly Night](previews/firefly-night.gif)<br>**Firefly Night**: fireflies blinking at the edge of a pine forest |
 | ![Amber Terminal](previews/amber-terminal.gif)<br>**Amber Terminal**: log lines scrolling up an old amber CRT | ![Night Sakura](previews/night-sakura.gif)<br>**Night Sakura**: petals tumbling past a moonlit branch |
@@ -23,7 +24,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `lofi-rain`, `lantern-alley`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `lofi-rain`, `lantern-alley`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -62,6 +63,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Holiday Lights | 0.25 |
 | Sleigh Ride | 0.25 |
 | Rooftop Santa | 0.21 |
+| Sky Clock | 0.20 |
 | Lantern Alley | 0.20 |
 | Pixel Camp | 0.19 |
 | Fireside | 0.18 |
@@ -69,6 +71,8 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Clean Slate | nothing moves |
 
 If your system asks apps to reduce motion, every scene holds still.
+
+Sky Clock reads your computer's local time when a session starts and sets its sky to match: dawn around 6:00, sunset around 18:30, night after 20:00. After that the sky moves on its own, about once a minute.
 
 ## Troubleshooting
 

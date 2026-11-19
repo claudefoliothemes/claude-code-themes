@@ -165,6 +165,20 @@ export const THEMES = [
     anchors: { 'surface-0': '#1e2326', 'surface-1': '#232a2e', 'surface-2': '#272e33', 'surface-3': '#2a3237', 'text-primary': '#ebe2cb', 'text-secondary': '#cfc5ab', 'text-muted': '#a3aea6' },
   },
   {
+    // A clock theme: the scene's sky runs one 24-hour cycle, and the render hook starts it at the
+    // local time of day (see build-themes.mjs). The preview squeezes a day into 12 seconds.
+    name: 'sky-clock',
+    label: 'Sky Clock',
+    clock: true,
+    description: 'A valley whose sky follows your local time: dawn, morning, afternoon, sunset, and a starry night, with the sun and moon crossing overhead.',
+    alt: 'A valley with a cabin under a sky that changes with the local time of day',
+    tint: '#0f1626',
+    opacity: 0.5,
+    roles: { accent: '#f2b05e', danger: '#ff6b78', success: '#5fd39a', warning: '#f7c95c', pro: '#9aa8ff' },
+    anchors: { 'surface-0': '#0f1626', 'surface-1': '#131b2e', 'surface-2': '#172036', 'surface-3': '#1b253c', 'text-primary': '#eef2f8', 'text-secondary': '#c8d1e0', 'text-muted': '#95a1b6' },
+    preview: { scene: { dayLength: 12, startHour: 7.9 }, seconds: 12, stillAt: 7.1 },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

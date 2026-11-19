@@ -15,6 +15,14 @@
       }
     },
     {
+      "name": "sky-clock",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/sky-clock-0.1.0.zip",
+        "sha256": "d4bde2e11345a401eed4096139b7b41dbbb9e1e3d38e9ce19093036faa2a32e6"
+      }
+    },
+    {
       "name": "braille-stars",
       "source": {
         "source": "archive",
