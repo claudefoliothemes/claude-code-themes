@@ -179,6 +179,26 @@ export const THEMES = [
     preview: { scene: { dayLength: 12, startHour: 7.9 }, seconds: 12, stillAt: 7.1 },
   },
   {
+    name: 'cyber-city',
+    label: 'Cyber City',
+    description: 'A neon cyberpunk city in the rain: towers edged in cyan and magenta, glowing billboards, and flying cars streaking past.',
+    alt: 'Neon cyberpunk skyline at night in the rain, with glowing billboards and flying cars',
+    tint: '#0d0a1c',
+    opacity: 0.5,
+    roles: { accent: '#38e1ff', danger: '#ff4f7b', success: '#4dffb5', warning: '#ffd166', pro: '#c77dff' },
+    anchors: { 'surface-0': '#0d0a1c', 'surface-1': '#120e24', 'surface-2': '#17122d', 'surface-3': '#1c1634', 'text-primary': '#f1ecff', 'text-secondary': '#cfc6ea', 'text-muted': '#9f94c2' },
+  },
+  {
+    name: 'autumn-maple',
+    label: 'Autumn Maple',
+    description: 'An autumn night at a shrine: a vermilion torii gate under a full moon, maple leaves tumbling down, and a stone lantern glowing.',
+    alt: 'Red maple leaves falling past a torii gate under a full moon, with a glowing stone lantern',
+    tint: '#120c14',
+    opacity: 0.5,
+    roles: { accent: '#f08a3c', danger: '#ff5c5c', success: '#8fd18a', warning: '#f2c14e', pro: '#c49bff' },
+    anchors: { 'surface-0': '#120c14', 'surface-1': '#18101b', 'surface-2': '#1e1421', 'surface-3': '#231826', 'text-primary': '#f8ede4', 'text-secondary': '#e0cdbf', 'text-muted': '#b09a8b' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

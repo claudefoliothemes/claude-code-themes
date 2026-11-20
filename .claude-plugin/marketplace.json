@@ -39,6 +39,14 @@
       }
     },
     {
+      "name": "cyber-city",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/cyber-city-0.1.0.zip",
+        "sha256": "a9a2f10d54c86a92d33b2e8071127b72f748755c9d47d35c4f560c14859e9b82"
+      }
+    },
+    {
       "name": "firefly-night",
       "source": {
         "source": "archive",
@@ -60,6 +68,14 @@
         "source": "archive",
         "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/night-sakura-0.1.0.zip",
         "sha256": "93a7a323d2bd4aaf1a2f3e3f5bf1e0c369a60668eef942da74db7467bc004df7"
+      }
+    },
+    {
+      "name": "autumn-maple",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/autumn-maple-0.1.0.zip",
+        "sha256": "96d76ec518b748a38fc3e761883817d9efe0fffba928bdaced0f7b40d297c8a8"
       }
     },
     {
