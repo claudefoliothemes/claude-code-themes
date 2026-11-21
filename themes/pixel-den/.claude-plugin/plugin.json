@@ -1,0 +1,15 @@
+{
+  "name": "pixel-den",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art room at night: rain on the window, an old monitor glowing with scrolling lines, a desk lamp, a mug steaming, and a sleeping cat.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

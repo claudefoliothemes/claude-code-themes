@@ -199,6 +199,28 @@ export const THEMES = [
     anchors: { 'surface-0': '#120c14', 'surface-1': '#18101b', 'surface-2': '#1e1421', 'surface-3': '#231826', 'text-primary': '#f8ede4', 'text-secondary': '#e0cdbf', 'text-muted': '#b09a8b' },
   },
   {
+    name: 'pixel-den',
+    label: 'Pixel Den',
+    description: 'A cozy pixel-art room at night: rain on the window, an old monitor glowing with scrolling lines, a desk lamp, a mug steaming, and a sleeping cat.',
+    alt: 'Pixel-art room at night with rain on the window, a glowing monitor, a desk lamp, and a sleeping cat',
+    tint: '#16121f',
+    opacity: 0.5,
+    roles: { accent: '#36d39a', danger: '#ff6b7f', success: '#7fffd4', warning: '#ffcf6b', pro: '#a98bff' },
+    anchors: { 'surface-0': '#16121f', 'surface-1': '#1b1626', 'surface-2': '#201a2d', 'surface-3': '#251e34', 'text-primary': '#efe9fb', 'text-secondary': '#cdc3e3', 'text-muted': '#9e93b8' },
+  },
+  {
+    // A light theme with a moving scene: needs the app in light mode.
+    name: 'morning-light',
+    label: 'Morning Light',
+    mode: 'light',
+    description: 'A light theme with a sunlit morning room: sunbeams with drifting dust, a plant swaying on the sill, tea steaming, and birds outside.',
+    alt: 'A sunlit room in the morning with light through the window, a plant on the sill, and steaming tea',
+    tint: '#f7f1e7',
+    opacity: 0.6,
+    roles: { accent: '#b5602a', danger: '#c53030', success: '#2f855a', warning: '#b7791f', pro: '#6b46c1' },
+    anchors: { 'surface-0': '#efe7da', 'surface-1': '#f7f1e7', 'surface-2': '#fcf9f3', 'text-primary': '#2a2420', 'text-secondary': '#4d443c', 'text-muted': '#665c52' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

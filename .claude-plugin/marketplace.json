@@ -151,6 +151,22 @@
       }
     },
     {
+      "name": "pixel-den",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-den-0.1.0.zip",
+        "sha256": "3e11d50f6b49e6e73e95ee0710b507f8efbc57db6780ad12a45dbc26bd0f8ec1"
+      }
+    },
+    {
+      "name": "morning-light",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/morning-light-0.1.0.zip",
+        "sha256": "8f234059be2ab8265dbaa2bc944dd9c56f552deed12f0f3f07067ed88a7d4211"
+      }
+    },
+    {
       "name": "clean-slate",
       "source": {
         "source": "archive",
