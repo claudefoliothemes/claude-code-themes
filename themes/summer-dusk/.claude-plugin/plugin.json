@@ -1,0 +1,15 @@
+{
+  "name": "summer-dusk",
+  "version": "0.1.0",
+  "description": "An anime-style summer evening: towering clouds lit pink and gold, birds on the power lines, a plane drawing a contrail, and a train passing a railroad crossing.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

@@ -229,6 +229,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#120d1f', 'surface-1': '#171126', 'surface-2': '#1c152d', 'surface-3': '#211934', 'text-primary': '#f2edfc', 'text-secondary': '#cfc6e6', 'text-muted': '#9f95bb' },
   },
   {
+    name: 'tokyo-crossing',
+    label: 'Tokyo Crossing',
+    description: 'A scramble crossing in Tokyo on a rainy night: glowing billboards, an elevated train gliding past, and umbrellas crossing when the light turns green.',
+    alt: 'A rainy Tokyo scramble crossing at night with umbrellas, billboards, and an elevated train',
+    tint: '#0c0b18',
+    opacity: 0.5,
+    roles: { accent: '#ff7ac6', danger: '#ff4d5e', success: '#5ef2b5', warning: '#ffd166', pro: '#a78bfa' },
+    anchors: { 'surface-0': '#0c0b18', 'surface-1': '#111020', 'surface-2': '#161428', 'surface-3': '#1b182f', 'text-primary': '#f2efff', 'text-secondary': '#cfcbe6', 'text-muted': '#9c97bb' },
+  },
+  {
+    name: 'summer-dusk',
+    label: 'Summer Dusk',
+    description: 'An anime-style summer evening: towering clouds lit pink and gold, birds on the power lines, a plane drawing a contrail, and a train passing a railroad crossing.',
+    alt: 'Anime-style summer evening sky with towering clouds, power lines, and a train at a railroad crossing',
+    tint: '#1c1a33',
+    opacity: 0.5,
+    roles: { accent: '#ffb26b', danger: '#ff6b81', success: '#7fe0b0', warning: '#ffd36b', pro: '#b49bff' },
+    anchors: { 'surface-0': '#1c1a33', 'surface-1': '#211e3b', 'surface-2': '#262343', 'surface-3': '#2b274a', 'text-primary': '#fff2ea', 'text-secondary': '#e3cfd6', 'text-muted': '#b39aae' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

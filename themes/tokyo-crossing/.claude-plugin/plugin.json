@@ -1,0 +1,15 @@
+{
+  "name": "tokyo-crossing",
+  "version": "0.1.0",
+  "description": "A scramble crossing in Tokyo on a rainy night: glowing billboards, an elevated train gliding past, and umbrellas crossing when the light turns green.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
