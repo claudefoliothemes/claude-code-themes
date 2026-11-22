@@ -249,6 +249,19 @@ export const THEMES = [
     anchors: { 'surface-0': '#1c1a33', 'surface-1': '#211e3b', 'surface-2': '#262343', 'surface-3': '#2b274a', 'text-primary': '#fff2ea', 'text-secondary': '#e3cfd6', 'text-muted': '#b39aae' },
   },
   {
+    // A clock theme like Sky Clock: the quote and greeting follow the local time (one line per hour).
+    name: 'good-vibes',
+    label: 'Good Vibes',
+    clock: true,
+    description: 'Good vibes on the clock: a new line of encouragement every hour, matched to the time of day, over warm colors that shift from morning to night.',
+    alt: 'A warm gradient with soft drifting lights and a card showing an encouraging line for the hour',
+    tint: '#1a1430',
+    opacity: 0.5,
+    roles: { accent: '#ffb86b', danger: '#ff6b81', success: '#6be0a8', warning: '#ffd36b', pro: '#b49bff' },
+    anchors: { 'surface-0': '#1a1430', 'surface-1': '#1f1838', 'surface-2': '#241c40', 'surface-3': '#292047', 'text-primary': '#fff4ec', 'text-secondary': '#e6d3db', 'text-muted': '#b39fb5' },
+    preview: { scene: { dayLength: 48, startHour: 0.95 }, seconds: 12, stillAt: 7 },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',
