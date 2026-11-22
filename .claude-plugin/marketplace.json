@@ -47,6 +47,14 @@
       }
     },
     {
+      "name": "neon-coast",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/neon-coast-0.1.0.zip",
+        "sha256": "f87e2d227c47e255903bf261b75932bbe9bb3fbb9bba43c69ed6f901f9918a0f"
+      }
+    },
+    {
       "name": "firefly-night",
       "source": {
         "source": "archive",
@@ -156,6 +164,14 @@
         "source": "archive",
         "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-den-0.1.0.zip",
         "sha256": "3e11d50f6b49e6e73e95ee0710b507f8efbc57db6780ad12a45dbc26bd0f8ec1"
+      }
+    },
+    {
+      "name": "pixel-arcade",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-arcade-0.1.0.zip",
+        "sha256": "5635eadafde9f3145e7b3da2c71bd73aad07a2a4f8fcc9174fcb2f7a3fd2621e"
       }
     },
     {

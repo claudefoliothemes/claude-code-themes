@@ -1,0 +1,15 @@
+{
+  "name": "pixel-arcade",
+  "version": "0.1.0",
+  "description": "A pixel-art arcade at night: cabinets playing made-up games, chasing marquee lights, a claw machine, and neon on the walls.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

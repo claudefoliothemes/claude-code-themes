@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Twenty-one themes for the Claude Code desktop app. Nineteen paint the app dark and play a moving scene behind your conversation. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Twenty-three themes for the Claude Code desktop app. Twenty-one paint the app dark and play a moving scene behind your conversation. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -11,7 +11,8 @@ Twenty-one themes for the Claude Code desktop app. Nineteen paint the app dark a
 | ![Lofi Rain](previews/lofi-rain.gif)<br>**Lofi Rain**: a lofi rainy window, city lights, and a steaming mug | ![Pastel Nebula](previews/pastel-nebula.gif)<br>**Pastel Nebula**: pastel clouds, a ringed planet, and shooting stars |
 | ![Lantern Alley](previews/lantern-alley.gif)<br>**Lantern Alley**: paper lanterns swaying over a rainy Japanese street | ![Pixel Camp](previews/pixel-camp.gif)<br>**Pixel Camp**: a pixel-art campfire, a lit tent, and a blinking owl |
 | ![Autumn Maple](previews/autumn-maple.gif)<br>**Autumn Maple**: maple leaves falling past a torii gate under the moon | ![Pixel Den](previews/pixel-den.gif)<br>**Pixel Den**: a pixel-art room at night, rain, a glowing monitor, a sleeping cat |
-| ![Morning Light](previews/morning-light.gif)<br>**Morning Light**: a light theme, a sunlit room with sunbeams and steaming tea | |
+| ![Morning Light](previews/morning-light.gif)<br>**Morning Light**: a light theme, a sunlit room with sunbeams and steaming tea | ![Neon Coast](previews/neon-coast.gif)<br>**Neon Coast**: a neon beach boulevard at sunset, palms and a convertible |
+| ![Pixel Arcade](previews/pixel-arcade.gif)<br>**Pixel Arcade**: a pixel-art arcade, glowing cabinets and a claw machine | |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
 | ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |
@@ -26,7 +27,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `autumn-maple`, `lofi-rain`, `lantern-alley`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `morning-light`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `lofi-rain`, `lantern-alley`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `morning-light`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -67,6 +68,8 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Holiday Lights | 0.25 |
 | Sleigh Ride | 0.25 |
 | Rooftop Santa | 0.21 |
+| Neon Coast | 0.22 |
+| Pixel Arcade | 0.21 |
 | Sky Clock | 0.20 |
 | Cyber City | 0.20 |
 | Lantern Alley | 0.20 |

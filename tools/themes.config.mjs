@@ -209,6 +209,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#16121f', 'surface-1': '#1b1626', 'surface-2': '#201a2d', 'surface-3': '#251e34', 'text-primary': '#efe9fb', 'text-secondary': '#cdc3e3', 'text-muted': '#9e93b8' },
   },
   {
+    name: 'neon-coast',
+    label: 'Neon Coast',
+    description: 'A beach boulevard at sunset: palm trees swaying, pastel hotels trimmed in neon, a convertible cruising past, and a helicopter crossing the sky.',
+    alt: 'A neon beach boulevard at sunset with palm trees, pastel hotels, and a pink convertible',
+    tint: '#1d0f2c',
+    opacity: 0.5,
+    roles: { accent: '#ff4fa3', danger: '#ff5470', success: '#3ff2c6', warning: '#ffb347', pro: '#a98bff' },
+    anchors: { 'surface-0': '#1d0f2c', 'surface-1': '#231334', 'surface-2': '#29173c', 'surface-3': '#2e1b43', 'text-primary': '#fff0f7', 'text-secondary': '#e8c9dc', 'text-muted': '#b896ad' },
+  },
+  {
+    name: 'pixel-arcade',
+    label: 'Pixel Arcade',
+    description: 'A pixel-art arcade at night: cabinets playing made-up games, chasing marquee lights, a claw machine, and neon on the walls.',
+    alt: 'Pixel-art arcade at night with glowing game cabinets and a claw machine',
+    tint: '#120d1f',
+    opacity: 0.5,
+    roles: { accent: '#3ff2c6', danger: '#ff5c7a', success: '#7dffb0', warning: '#ffd36b', pro: '#a98bff' },
+    anchors: { 'surface-0': '#120d1f', 'surface-1': '#171126', 'surface-2': '#1c152d', 'surface-3': '#211934', 'text-primary': '#f2edfc', 'text-secondary': '#cfc6e6', 'text-muted': '#9f95bb' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',
