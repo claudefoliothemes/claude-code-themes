@@ -17,6 +17,9 @@ export function pixelGrid(cols, rows) {
   const disc = (cx, cy, r, c) => {
     for (let y = -r; y <= r; y++) for (let x = -r; x <= r; x++) if (x * x + y * y <= r * r + r * 0.8) set(cx + x, cy + y, c)
   }
+  const ellipse = (cx, cy, rx, ry, c) => {
+    for (let y = -ry; y <= ry; y++) for (let x = -rx; x <= rx; x++) if ((x * x) / (rx * rx + 0.6 * rx) + (y * y) / (ry * ry + 0.6 * ry) <= 1) set(cx + x, cy + y, c)
+  }
   // Scanline fill of a polygon given as [[x, y], ...].
   const poly = (pts, c) => {
     const ys = pts.map((p) => p[1])
@@ -63,7 +66,18 @@ export function pixelGrid(cols, rows) {
     }
     return [...paths].map(([c, p]) => `<path d="${p.d}" stroke="${c}" stroke-width="${P}"${extra}/>`).join('')
   }
-  return { cols, rows, g, set, get, rect, disc, poly, gradient, svg }
+  return { cols, rows, g, set, get, rect, disc, ellipse, poly, gradient, svg }
+}
+
+// Stamp a sprite drawn as rows of letters: each letter maps to a color in pal, '.' is clear.
+// scale > 1 draws each sprite pixel as a scale x scale block.
+export function stamp(px, x, y, rows, pal, scale = 1, flip = false) {
+  rows.forEach((row, j) => [...row].forEach((ch, i) => {
+    const c = pal[ch]
+    if (!c) return
+    const col = flip ? row.length - 1 - i : i
+    px.rect(x + col * scale, y + j * scale, scale, scale, c)
+  }))
 }
 
 // A shaded blob (a canopy, a cloud, a bush): shadow below right, body, highlight above left.

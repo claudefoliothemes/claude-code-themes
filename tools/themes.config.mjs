@@ -284,6 +284,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#0b1230', 'surface-1': '#0f1738', 'surface-2': '#131c40', 'surface-3': '#172147', 'text-primary': '#eef4fc', 'text-secondary': '#c9d6ea', 'text-muted': '#94a5c2' },
   },
   {
+    name: 'pixel-pets',
+    label: 'Pixel Pets',
+    description: 'A cozy pixel-art room with pets: a cat asleep on the sofa, a puppy wagging by a bouncing ball, and a goldfish circling its bowl.',
+    alt: 'Pixel-art living room at night with a sleeping cat on the sofa, a puppy with a ball, and a goldfish bowl',
+    tint: '#1c1830',
+    opacity: 0.5,
+    roles: { accent: '#f0a04b', danger: '#ff5a6e', success: '#7fd6a4', warning: '#ffd166', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#1c1830', 'surface-1': '#211c38', 'surface-2': '#262040', 'surface-3': '#2b2447', 'text-primary': '#fbf2e8', 'text-secondary': '#e0d2d8', 'text-muted': '#ab9cb0' },
+  },
+  {
+    name: 'slime-meadow',
+    label: 'Slime Meadow',
+    description: 'Cute pixel-art slimes in pastel colors hopping and blinking in a moonlit meadow, with flowers, glowing mushrooms, and fireflies.',
+    alt: 'Pastel pixel-art slimes hopping in a moonlit meadow with flowers and glowing mushrooms',
+    tint: '#100e26',
+    opacity: 0.5,
+    roles: { accent: '#6fe8b8', danger: '#ff6b9e', success: '#8fe07f', warning: '#ffd166', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#100e26', 'surface-1': '#15132e', 'surface-2': '#1a1736', 'surface-3': '#1f1c3e', 'text-primary': '#f0eeff', 'text-secondary': '#cdc9e8', 'text-muted': '#9c97bf' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

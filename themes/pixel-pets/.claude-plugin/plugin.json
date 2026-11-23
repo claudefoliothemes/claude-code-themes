@@ -1,0 +1,15 @@
+{
+  "name": "pixel-pets",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art room with pets: a cat asleep on the sofa, a puppy wagging by a bouncing ball, and a goldfish circling its bowl.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "slime-meadow",
+  "version": "0.1.0",
+  "description": "Cute pixel-art slimes in pastel colors hopping and blinking in a moonlit meadow, with flowers, glowing mushrooms, and fireflies.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

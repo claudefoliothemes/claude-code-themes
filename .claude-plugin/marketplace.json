@@ -215,6 +215,22 @@
       }
     },
     {
+      "name": "pixel-pets",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-pets-0.1.0.zip",
+        "sha256": "a39b0527c4764dde512ee9d8184c1d79ca4dfb203b66d2c110ed26caa660cc75"
+      }
+    },
+    {
+      "name": "slime-meadow",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/slime-meadow-0.1.0.zip",
+        "sha256": "5d4495d4feaee56beba34b8e30c600cf543f1b49ffddad3796f41a40beaa3f26"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",
