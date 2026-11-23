@@ -8,12 +8,16 @@
 //
 // --publish needs GITHUB_TOKEN (environment or a gitignored .env) with Contents read/write on the
 // repo. An uploaded zip is never replaced, because that would reset its download count: to ship
-// a change, bump VERSION in themes.config.mjs and rebuild.
+// a change to one theme, give it its own `version` in themes.config.mjs (or bump VERSION for all)
+// and rebuild.
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { crc32, deflateRawSync } from 'node:zlib'
-import { REPO, VERSION } from './themes.config.mjs'
+import { REPO, THEMES, VERSION } from './themes.config.mjs'
+
+// A theme may set its own version in the config; its zip is named with that version.
+const expected = new Map(THEMES.map((t) => [t.name, t.version ?? VERSION]))
 
 const MARKETPLACE = '.claude-plugin/marketplace.json'
 const TAG = `v${VERSION}`
@@ -73,7 +77,7 @@ mkdirSync('dist', { recursive: true })
 const built = marketplace.plugins.map(({ name }) => {
   const dir = join('themes', name)
   const version = JSON.parse(readFileSync(join(dir, '.claude-plugin', 'plugin.json'), 'utf8')).version
-  if (version !== VERSION) throw new Error(`${name} is at ${version}, not ${VERSION}: rebuild with tools/build-themes.mjs`)
+  if (version !== expected.get(name)) throw new Error(`${name} is at ${version}, not ${expected.get(name)}: rebuild with tools/build-themes.mjs`)
   const file = `${name}-${version}.zip`
   const data = zip(dir, filesOf(dir))
   writeFileSync(join('dist', file), data)

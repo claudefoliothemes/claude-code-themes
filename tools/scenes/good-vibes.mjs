@@ -9,13 +9,14 @@ import { H, TICK, W, f, onTick, rng, svgDoc } from './_lib.mjs'
 const CLOCK_MARK = '-43200.01s' // noon, replaced at render time; must match build-themes.mjs
 
 // One line per hour, 0:00 to 23:00, pre-split to fit the card. Original lines, so nothing is
-// misattributed. No < > or & in the text: they break the SVG.
+// misattributed. Only encouragement: no telling people to rest, sleep, eat, stretch or step
+// away, which reads as nagging. No < > or & in the text: they break the SVG.
 const QUOTES = [
-  ['Rest counts', 'as progress too.'],
-  ['The code will', 'still be here', 'after you sleep.'],
-  ['Late nights', 'are fine.', "Burnout isn't."],
+  ['Night owls write', 'the best code.'],
+  ['Quiet house,', 'loud ideas.'],
+  ['Good ideas show', 'up right about now.'],
   ['Quiet hours,', 'clear head.'],
-  ['Up early or', 'still up? Either', 'way, drink water.'],
+  ['Early start,', 'big things ahead.'],
   ['The day is a', 'blank file.', 'Start small.'],
   ['One thing', 'at a time.', "You've got this."],
   ['Coffee first.', 'Then the hard part.'],
@@ -23,18 +24,18 @@ const QUOTES = [
   ['Start with the task', 'you keep avoiding.'],
   ['Shipped and good', 'beats perfect', 'and stuck.'],
   ["You've fixed harder", 'bugs than this one.'],
-  ['Take a real lunch.', 'Your brain', 'needs it.'],
+  ['Halfway through', 'the day. Keep', 'it rolling.'],
   ['Stuck? Explain it', 'out loud. It helps.'],
   ['Small commits,', 'steady progress.'],
-  ['Stretch, breathe,', 'then back to it.'],
+  ['One more push', 'and it clicks.'],
   ['Everyone good at', 'this started out', 'lost too.'],
   ['Look how far', 'you got today.'],
-  ['Step away', 'for a bit. It', 'counts as work.'],
-  ['Good work earns', 'a good evening.'],
-  ["Write tomorrow's", 'first step down.', 'Then rest.'],
+  ['Finish strong.', "You're close."],
+  ['Every bug fixed', 'today counts.'],
+  ['Your future self', 'will thank you', 'for this commit.'],
   ['Proud of you for', 'showing up today.'],
   ['Tomorrow is', 'a fresh build.'],
-  ['Sleep is the', 'best debugger.'],
+  ['Big ideas love', 'late hours.'],
 ]
 const GREETINGS = [['Good morning', 5, 12], ['Good afternoon', 12, 17], ['Good evening', 17, 21], ['Late night', 21, 29]]
 

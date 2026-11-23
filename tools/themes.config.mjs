@@ -1,5 +1,6 @@
 // The theme catalog: palette, glass and copy for each scene in tools/scenes/<name>.mjs.
 
+// Every theme's version unless its entry sets its own `version` (to ship one theme's update alone).
 export const VERSION = '0.1.0'
 
 // The public repo the themes are published from (see tools/release-themes.mjs).
@@ -252,6 +253,7 @@ export const THEMES = [
     // A clock theme like Sky Clock: the quote and greeting follow the local time (one line per hour).
     name: 'good-vibes',
     label: 'Good Vibes',
+    version: '0.1.1', // its own version: 0.1.1 swapped out the rest and sleep lines
     clock: true,
     description: 'Good vibes on the clock: a new line of encouragement every hour, matched to the time of day, over warm colors that shift from morning to night.',
     alt: 'A warm gradient with soft drifting lights and a card showing an encouraging line for the hour',

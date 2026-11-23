@@ -235,7 +235,7 @@ for (const t of THEMES) {
   mkdirSync(join(dir, '.claude-plugin'), { recursive: true })
   mkdirSync(join(dir, 'hooks'), { recursive: true })
   mkdirSync(join(dir, 'tests'), { recursive: true })
-  writeFileSync(join(dir, '.claude-plugin', 'plugin.json'), JSON.stringify({ name: t.name, version: VERSION, description: t.description, ...PUBLISHER }, null, 2) + '\n')
+  writeFileSync(join(dir, '.claude-plugin', 'plugin.json'), JSON.stringify({ name: t.name, version: t.version ?? VERSION, description: t.description, ...PUBLISHER }, null, 2) + '\n')
   writeFileSync(join(dir, 'hooks', 'hooks.json'), '{ "modules": ["./register.tsx"] }\n')
   writeFileSync(join(dir, 'hooks', 'register.tsx'), t.ground ? stillRegister(t) : sceneRegister(t))
   if (!t.ground) {
