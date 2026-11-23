@@ -304,6 +304,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#100e26', 'surface-1': '#15132e', 'surface-2': '#1a1736', 'surface-3': '#1f1c3e', 'text-primary': '#f0eeff', 'text-secondary': '#cdc9e8', 'text-muted': '#9c97bf' },
   },
   {
+    name: 'pixel-cafe',
+    label: 'Pixel Café',
+    description: 'A cozy pixel-art café on a rainy night: rain running down the big window, warm pendant lamps, steaming mugs, a pastry case, and a cat asleep on the window seat.',
+    alt: 'Pixel-art café at night with rain on the window, pendant lamps, an espresso machine, a pastry case, and a sleeping cat',
+    tint: '#21181e',
+    opacity: 0.5,
+    roles: { accent: '#e8b14a', danger: '#ff6b6b', success: '#7fd6a4', warning: '#ffd166', pro: '#d8a6ff' },
+    anchors: { 'surface-0': '#21181e', 'surface-1': '#271d24', 'surface-2': '#2d222a', 'surface-3': '#332730', 'text-primary': '#fbf0e4', 'text-secondary': '#e2d0c8', 'text-muted': '#ae9a96' },
+  },
+  {
+    name: 'pixel-cosmos',
+    label: 'Pixel Cosmos',
+    description: 'Pixel-art deep space: a ringed planet, a cratered moon, glowing nebulas, tumbling asteroids, a little rocket cruising past, and shooting stars.',
+    alt: 'Pixel-art space scene with a ringed planet, a moon, purple and teal nebulas, asteroids, and a small rocket',
+    tint: '#0c0a22',
+    opacity: 0.5,
+    roles: { accent: '#7fd8ff', danger: '#ff6b8a', success: '#6fe8b8', warning: '#ffd166', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#0c0a22', 'surface-1': '#11102a', 'surface-2': '#161532', 'surface-3': '#1b1a3a', 'text-primary': '#eef0ff', 'text-secondary': '#c9cbe8', 'text-muted': '#9698bf' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

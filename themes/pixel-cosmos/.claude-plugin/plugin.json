@@ -1,0 +1,15 @@
+{
+  "name": "pixel-cosmos",
+  "version": "0.1.0",
+  "description": "Pixel-art deep space: a ringed planet, a cratered moon, glowing nebulas, tumbling asteroids, a little rocket cruising past, and shooting stars.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

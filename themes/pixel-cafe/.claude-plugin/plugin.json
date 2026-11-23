@@ -1,0 +1,15 @@
+{
+  "name": "pixel-cafe",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art café on a rainy night: rain running down the big window, warm pendant lamps, steaming mugs, a pastry case, and a cat asleep on the window seat.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

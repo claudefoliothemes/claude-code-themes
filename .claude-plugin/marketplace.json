@@ -231,6 +231,22 @@
       }
     },
     {
+      "name": "pixel-cafe",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-cafe-0.1.0.zip",
+        "sha256": "ce45a0864d92917b560eb9d86c7862efb76b4306c3de5d016280ed73b3941959"
+      }
+    },
+    {
+      "name": "pixel-cosmos",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-cosmos-0.1.0.zip",
+        "sha256": "13ba90501b6ef209be7ba42376ac154dce9998521d674fc1aaa43fdaa2b29de9"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",
