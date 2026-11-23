@@ -199,6 +199,22 @@
       }
     },
     {
+      "name": "pixel-shrine",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-shrine-0.1.0.zip",
+        "sha256": "012c32ecd98a8b7effd2b7fe4fbbe2b1af67d0f6c2b6b76cb572f29163bb8f80"
+      }
+    },
+    {
+      "name": "pixel-village",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/pixel-village-0.1.0.zip",
+        "sha256": "0e8f292c3b1be541298e6cadcb783041503a477f23456c4f0632bde3e6168e72"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

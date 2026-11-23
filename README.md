@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Twenty-six themes for the Claude Code desktop app. Twenty-four paint the app dark and play a moving scene behind your conversation. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Twenty-eight themes for the Claude Code desktop app. Twenty-six paint the app dark and play a moving scene behind your conversation. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -13,6 +13,7 @@ Twenty-six themes for the Claude Code desktop app. Twenty-four paint the app dar
 | ![Autumn Maple](previews/autumn-maple.gif)<br>**Autumn Maple**: maple leaves falling past a torii gate under the moon | ![Pixel Den](previews/pixel-den.gif)<br>**Pixel Den**: a pixel-art room at night, rain, a glowing monitor, a sleeping cat |
 | ![Morning Light](previews/morning-light.gif)<br>**Morning Light**: a light theme, a sunlit room with sunbeams and steaming tea | ![Neon Coast](previews/neon-coast.gif)<br>**Neon Coast**: a neon beach boulevard at sunset, palms and a convertible |
 | ![Pixel Arcade](previews/pixel-arcade.gif)<br>**Pixel Arcade**: a pixel-art arcade, glowing cabinets and a claw machine | ![Tokyo Crossing](previews/tokyo-crossing.gif)<br>**Tokyo Crossing**: a rainy scramble crossing, umbrellas and a passing train |
+| ![Pixel Shrine](previews/pixel-shrine.gif)<br>**Pixel Shrine**: a pixel-art pagoda by a moonlit lake, cherry petals falling | ![Pixel Village](previews/pixel-village.gif)<br>**Pixel Village**: a pixel-art snowy village, aurora, and a lit Christmas tree |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -28,7 +29,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `morning-light`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `morning-light`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -63,6 +64,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Lofi Rain | 0.28 |
 | Pixel Den | 0.26 |
 | Autumn Maple | 0.27 |
+| Pixel Village | 0.27 |
 | Pastel Nebula | 0.26 |
 | Firefly Night | 0.26 |
 | Amber Terminal | 0.25 |
@@ -81,6 +83,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Fireside | 0.18 |
 | Morning Light | 0.18 |
 | Night Sakura | 0.17 |
+| Pixel Shrine | 0.17 |
 | Clean Slate | nothing moves |
 
 If your system asks apps to reduce motion, every scene holds still.

@@ -1,0 +1,15 @@
+{
+  "name": "pixel-shrine",
+  "version": "0.1.0",
+  "description": "A pixel-art shrine on a spring night: a pagoda under a full moon, a torii gate by the lake, cherry blossoms drifting down, and the moon shimmering on the water.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

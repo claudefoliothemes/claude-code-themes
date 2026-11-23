@@ -264,6 +264,26 @@ export const THEMES = [
     preview: { scene: { dayLength: 48, startHour: 0.95 }, seconds: 12, stillAt: 7 },
   },
   {
+    name: 'pixel-shrine',
+    label: 'Pixel Shrine',
+    description: 'A pixel-art shrine on a spring night: a pagoda under a full moon, a torii gate by the lake, cherry blossoms drifting down, and the moon shimmering on the water.',
+    alt: 'Pixel-art pagoda and torii gate by a lake under a full moon, with cherry blossom petals falling',
+    tint: '#141233',
+    opacity: 0.5,
+    roles: { accent: '#ff9fc4', danger: '#ff5c6c', success: '#8fe0b0', warning: '#ffcf7a', pro: '#b49bff' },
+    anchors: { 'surface-0': '#141233', 'surface-1': '#19163b', 'surface-2': '#1e1a43', 'surface-3': '#231e4a', 'text-primary': '#fbeef6', 'text-secondary': '#e0cde0', 'text-muted': '#ad9bbc' },
+  },
+  {
+    name: 'pixel-village',
+    label: 'Pixel Village',
+    description: 'A pixel-art winter village at night: an aurora over snowy peaks, cottages with smoking chimneys, a lit Christmas tree, a snowman, and snow falling.',
+    alt: 'Pixel-art snowy village at night with an aurora, glowing cottages, and a lit Christmas tree',
+    tint: '#0b1230',
+    opacity: 0.5,
+    roles: { accent: '#6fe8b8', danger: '#ff5a5f', success: '#5fd38a', warning: '#ffd166', pro: '#9fb4ff' },
+    anchors: { 'surface-0': '#0b1230', 'surface-1': '#0f1738', 'surface-2': '#131c40', 'surface-3': '#172147', 'text-primary': '#eef4fc', 'text-secondary': '#c9d6ea', 'text-muted': '#94a5c2' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',
