@@ -279,6 +279,14 @@
       }
     },
     {
+      "name": "starlit-cabin",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/starlit-cabin-0.1.0.zip",
+        "sha256": "b5f7c3c2b02289ffc22f15024b3d47359cff002edb19b7670d527e07cbe88fe7"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

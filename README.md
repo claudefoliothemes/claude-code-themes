@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Thirty-seven themes for the Claude Code desktop app. Thirty-four paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Thirty-eight themes for the Claude Code desktop app. Thirty-five paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -22,7 +22,7 @@ Thirty-seven themes for the Claude Code desktop app. Thirty-four paint the app d
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
 | ![Holiday Lights](previews/holiday-lights.gif)<br>**Holiday Lights**: string lights, a lit pine and falling snow | ![Clean Slate](previews/clean-slate.png)<br>**Clean Slate**: white and soft gray, nothing moving |
-| ![OLED Black](previews/oled-black.png)<br>**OLED Black**: true black for OLED screens, nothing moving | |
+| ![OLED Black](previews/oled-black.png)<br>**OLED Black**: true black for OLED screens, nothing moving | ![Starlit Cabin](previews/starlit-cabin.gif)<br>**Starlit Cabin**: a car ceiling of fiber-optic stars, twinkling in dark leather |
 
 The chat in these previews is made up, to show the colors.
 
@@ -34,7 +34,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -87,6 +87,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Low Orbit | 0.22 |
 | Pixel Arcade | 0.21 |
 | Sky Clock | 0.20 |
+| Starlit Cabin | 0.20 |
 | Good Vibes | 0.20 |
 | Cyber City | 0.20 |
 | Lantern Alley | 0.20 |

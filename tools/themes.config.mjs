@@ -369,6 +369,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#070a1c', 'surface-1': '#0c1024', 'surface-2': '#11152c', 'surface-3': '#161a34', 'text-primary': '#eef2ff', 'text-secondary': '#c8cfe8', 'text-muted': '#9399bf' },
   },
   {
+    name: 'starlit-cabin',
+    label: 'Starlit Cabin',
+    description: "Looking up at a luxury car's star ceiling at night: over a thousand fiber-optic stars twinkling and glinting in dark leather, shooting stars, and soft ambient light along the edges.",
+    alt: 'A dark leather car ceiling filled with fiber-optic pinpoint stars, with sun visors and a mirror at the front',
+    tint: '#0c0b14',
+    opacity: 0.5,
+    roles: { accent: '#e8d2a8', danger: '#ff6b7a', success: '#6fd8a0', warning: '#ffd08a', pro: '#c8b8ff' },
+    anchors: { 'surface-0': '#0c0b14', 'surface-1': '#11101a', 'surface-2': '#161520', 'surface-3': '#1b1a26', 'text-primary': '#f4f0ea', 'text-secondary': '#d4cfd8', 'text-muted': '#9e98a8' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

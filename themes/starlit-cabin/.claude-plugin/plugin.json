@@ -1,0 +1,15 @@
+{
+  "name": "starlit-cabin",
+  "version": "0.1.0",
+  "description": "Looking up at a luxury car's star ceiling at night: over a thousand fiber-optic stars twinkling and glinting in dark leather, shooting stars, and soft ambient light along the edges.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
