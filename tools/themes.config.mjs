@@ -336,6 +336,17 @@ export const THEMES = [
     anchors: { 'surface-0': '#efe7da', 'surface-1': '#f7f1e7', 'surface-2': '#fcf9f3', 'text-primary': '#2a2420', 'text-secondary': '#4d443c', 'text-muted': '#665c52' },
   },
   {
+    // A still, true-black theme for OLED screens: no scene, so black pixels stay off.
+    name: 'oled-black',
+    label: 'OLED Black',
+    description: 'True black for OLED screens: a pure black backdrop, crisp light text, and nothing moving, so dark pixels stay off.',
+    ground: { color: '#000000' },
+    tint: '#000000',
+    opacity: 0.7,
+    roles: { accent: '#9db8ff', danger: '#ff6b6b', success: '#5fd38a', warning: '#ffcc66', pro: '#c4a6ff' },
+    anchors: { 'surface-0': '#000000', 'surface-1': '#0a0a0a', 'surface-2': '#121212', 'surface-3': '#1a1a1a', 'text-primary': '#f5f5f5', 'text-secondary': '#c4c4c4', 'text-muted': '#8f8f8f' },
+  },
+  {
     // A still, light theme: no scene file, the app draws the ground itself. tint and opacity
     // only shape the preview's mock window.
     name: 'clean-slate',

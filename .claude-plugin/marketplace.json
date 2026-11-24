@@ -255,6 +255,14 @@
       }
     },
     {
+      "name": "oled-black",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/oled-black-0.1.0.zip",
+        "sha256": "cf312ad05a9a308d3be7b96eb517a456b385abe0f9f81aaefc7bc37a2082c171"
+      }
+    },
+    {
       "name": "clean-slate",
       "source": {
         "source": "archive",

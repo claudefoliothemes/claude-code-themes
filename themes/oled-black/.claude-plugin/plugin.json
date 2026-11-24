@@ -1,0 +1,15 @@
+{
+  "name": "oled-black",
+  "version": "0.1.0",
+  "description": "True black for OLED screens: a pure black backdrop, crisp light text, and nothing moving, so dark pixels stay off.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
