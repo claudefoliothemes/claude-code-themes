@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Thirty-three themes for the Claude Code desktop app. Thirty paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Thirty-five themes for the Claude Code desktop app. Thirty-two paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -16,6 +16,7 @@ Thirty-three themes for the Claude Code desktop app. Thirty paint the app dark a
 | ![Pixel Shrine](previews/pixel-shrine.gif)<br>**Pixel Shrine**: a pixel-art pagoda by a moonlit lake, cherry petals falling | ![Pixel Village](previews/pixel-village.gif)<br>**Pixel Village**: a pixel-art snowy village, aurora, and a lit Christmas tree |
 | ![Pixel Pets](previews/pixel-pets.gif)<br>**Pixel Pets**: a sleeping cat, a wagging puppy, and a goldfish in a cozy room | ![Slime Meadow](previews/slime-meadow.gif)<br>**Slime Meadow**: cute pastel slimes hopping in a moonlit meadow |
 | ![Pixel Café](previews/pixel-cafe.gif)<br>**Pixel Café**: rain on the window, warm lamps, steaming mugs, and a sleeping cat | ![Pixel Cosmos](previews/pixel-cosmos.gif)<br>**Pixel Cosmos**: a ringed planet, nebulas, asteroids, and a little rocket cruising past |
+| ![Christmas Eve](previews/christmas-eve.gif)<br>**Christmas Eve**: a crackling fire, stockings, a twinkling tree, and a toy train | ![Summit Sunrise](previews/summit-sunrise.gif)<br>**Summit Sunrise**: a mountain sunrise with a new line of motivation every 15 seconds |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -32,7 +33,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -79,7 +80,9 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Tokyo Crossing | 0.24 |
 | Pixel Cosmos | 0.24 |
 | Summer Dusk | 0.23 |
+| Summit Sunrise | 0.23 |
 | Neon Coast | 0.22 |
+| Christmas Eve | 0.22 |
 | Pixel Arcade | 0.21 |
 | Sky Clock | 0.20 |
 | Good Vibes | 0.20 |

@@ -324,6 +324,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#0c0a22', 'surface-1': '#11102a', 'surface-2': '#161532', 'surface-3': '#1b1a3a', 'text-primary': '#eef0ff', 'text-secondary': '#c9cbe8', 'text-muted': '#9698bf' },
   },
   {
+    name: 'christmas-eve',
+    label: 'Christmas Eve',
+    description: 'A cozy pixel-art living room on Christmas Eve: a crackling fire, stockings on the mantel, a twinkling tree with presents, snow past the window, and a toy train.',
+    alt: 'Pixel-art living room on Christmas Eve with a fireplace, stockings, a lit tree with presents, snowy window, and a toy train',
+    tint: '#22161e',
+    opacity: 0.5,
+    roles: { accent: '#ff6b6b', danger: '#ff5a5f', success: '#5fd38a', warning: '#ffd166', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#22161e', 'surface-1': '#281b24', 'surface-2': '#2e202a', 'surface-3': '#342530', 'text-primary': '#fbf0e8', 'text-secondary': '#e2d0cc', 'text-muted': '#ae9a9a' },
+  },
+  {
+    name: 'summit-sunrise',
+    label: 'Summit Sunrise',
+    description: 'Sunrise over the mountains with a fresh line of motivation every 15 seconds, a climber working up to a waving summit flag, drifting clouds, and birds.',
+    alt: 'Mountain sunrise with a flag on the summit, a dotted trail, pine trees, and a card showing a line of motivation',
+    tint: '#1e1838',
+    opacity: 0.5,
+    roles: { accent: '#ffb86b', danger: '#ff6b7a', success: '#6fe0a8', warning: '#ffd166', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#1e1838', 'surface-1': '#231d40', 'surface-2': '#282248', 'surface-3': '#2d274f', 'text-primary': '#fbf2ec', 'text-secondary': '#dccfe0', 'text-muted': '#a899b8' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

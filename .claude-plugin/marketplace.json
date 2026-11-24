@@ -247,6 +247,22 @@
       }
     },
     {
+      "name": "christmas-eve",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/christmas-eve-0.1.0.zip",
+        "sha256": "5b61087c3c7fcbbe223d15ac990a97a60c2ed879b33273c1e89d3684249cfde7"
+      }
+    },
+    {
+      "name": "summit-sunrise",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/summit-sunrise-0.1.0.zip",
+        "sha256": "62f7c13be75d4c87d5c9837f08d9216ebc869e90c511a6e8d6323475dbc8576d"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

@@ -1,0 +1,15 @@
+{
+  "name": "summit-sunrise",
+  "version": "0.1.0",
+  "description": "Sunrise over the mountains with a fresh line of motivation every 15 seconds, a climber working up to a waving summit flag, drifting clouds, and birds.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

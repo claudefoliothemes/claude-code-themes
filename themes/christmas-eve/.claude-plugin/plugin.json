@@ -1,0 +1,15 @@
+{
+  "name": "christmas-eve",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art living room on Christmas Eve: a crackling fire, stockings on the mantel, a twinkling tree with presents, snow past the window, and a toy train.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
