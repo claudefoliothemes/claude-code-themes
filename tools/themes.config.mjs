@@ -344,6 +344,31 @@ export const THEMES = [
     anchors: { 'surface-0': '#1e1838', 'surface-1': '#231d40', 'surface-2': '#282248', 'surface-3': '#2d274f', 'text-primary': '#fbf2ec', 'text-secondary': '#dccfe0', 'text-muted': '#a899b8' },
   },
   {
+    // A clock theme with calendar marks: the render hook fills in local time, today's date, the
+    // time zone, and the season (see build-themes.mjs).
+    name: 'window-clock',
+    label: 'Window Clock',
+    clock: true,
+    calendar: true,
+    description: 'A pixel-art room with a clock and calendar on your local time, and a window whose view follows the time of day and the season: blossoms, summer green, autumn leaves, or snow.',
+    alt: 'Pixel-art room with a big window onto a field and cottage, a red digital alarm clock, and a wall calendar',
+    tint: '#1e1826',
+    opacity: 0.5,
+    roles: { accent: '#ff7a5a', danger: '#ff5a6e', success: '#6fd08a', warning: '#ffd166', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#1e1826', 'surface-1': '#241d2d', 'surface-2': '#2a2234', 'surface-3': '#30273b', 'text-primary': '#fbf1ea', 'text-secondary': '#e0d2d4', 'text-muted': '#ab9ca6' },
+    preview: { scene: { start: 60300, season: 'autumn', date: new Date(2026, 10, 24), tz: 'EST' } },
+  },
+  {
+    name: 'low-orbit',
+    label: 'Low Orbit',
+    description: 'Night over Earth from orbit: city lights turning below, an aurora along the curve, the sun about to rise, a space station gliding past, and the moon among the stars.',
+    alt: 'Night side of Earth from orbit with city lights, an aurora, a sunrise glow on the horizon, a space station, and the moon',
+    tint: '#070a1c',
+    opacity: 0.5,
+    roles: { accent: '#7ab8ff', danger: '#ff6b7a', success: '#5affb0', warning: '#ffd08a', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#070a1c', 'surface-1': '#0c1024', 'surface-2': '#11152c', 'surface-3': '#161a34', 'text-primary': '#eef2ff', 'text-secondary': '#c8cfe8', 'text-muted': '#9399bf' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

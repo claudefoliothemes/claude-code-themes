@@ -1,0 +1,15 @@
+{
+  "name": "low-orbit",
+  "version": "0.1.0",
+  "description": "Night over Earth from orbit: city lights turning below, an aurora along the curve, the sun about to rise, a space station gliding past, and the moon among the stars.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

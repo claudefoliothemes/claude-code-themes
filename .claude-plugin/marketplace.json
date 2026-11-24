@@ -263,6 +263,22 @@
       }
     },
     {
+      "name": "window-clock",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/window-clock-0.1.0.zip",
+        "sha256": "34668600398cf83d74c178d6cf9121de5ffa285860d701e043a12afb3e0c382d"
+      }
+    },
+    {
+      "name": "low-orbit",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/low-orbit-0.1.0.zip",
+        "sha256": "5e6f18f3ab2e917d8bad91e64a02601bd7facd48492a6ae37806e8db705b5838"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

@@ -32,6 +32,10 @@ const THEMES = [...PUBLIC_THEMES, ...(await privateThemes(outFlag === -1))]
 
 // A clock theme's scene runs one 24-hour cycle built to start at noon; this delay marks it.
 const CLOCK_MARK = '-43200.01s'
+// A calendar theme (also a clock theme) carries __WEEKDAYi__, __MONTHi__ and __DAYi__ for today
+// and the following days, __TZ__ and __SEASON__; its render hook fills them in.
+const CALENDAR_DAYS = 7
+const CALENDAR_MARKS = ['__TZ__', '__SEASON__', ...Array.from({ length: CALENDAR_DAYS }, (_, i) => [`__WEEKDAY${i}__`, `__MONTH${i}__`, `__DAY${i}__`]).flat()]
 
 const modeOf = (t) => t.mode ?? 'dark'
 
@@ -106,7 +110,30 @@ const atLocalTime = (): string => {
   const now = new Date()
   const seconds = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds()
 
-  return SCENE.split(CLOCK_MARK).join(\`-\${seconds}s\`)
+  return ${t.calendar ? 'withCalendar(SCENE.split(CLOCK_MARK).join(`-${seconds}s`), now)' : 'SCENE.split(CLOCK_MARK).join(`-${seconds}s`)'}
+}
+` : ''}${t.calendar ? `
+// The scene also carries calendar marks: the names and numbers of today and the next six days
+// (each shown from its local midnight, so the date turns over while the app stays open), the time
+// zone's short name, and the season, which flips for time zones south of the equator.
+const SOUTHERN = /^(Australia|Antarctica)\\/|^America\\/(Argentina|Sao_Paulo|Santiago|Montevideo|Asuncion|La_Paz)|^Pacific\\/(Auckland|Chatham|Fiji|Tongatapu|Noumea)|^Africa\\/(Johannesburg|Maputo|Windhoek|Harare|Gaborone|Lusaka)|^Indian\\/(Mauritius|Reunion)/
+const clean = (text: string): string => text.replace(/[<>&]/g, '')
+const withCalendar = (scene: string, now: Date): string => {
+  let source = scene
+  for (let i = 0; i < ${CALENDAR_DAYS}; i++) {
+    const day = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i)
+
+    source = source
+      .split(\`__WEEKDAY\${i}__\`).join(clean(day.toLocaleDateString(undefined, { weekday: 'long' })))
+      .split(\`__MONTH\${i}__\`).join(clean(day.toLocaleDateString(undefined, { month: 'long' })))
+      .split(\`__DAY\${i}__\`).join(String(day.getDate()))
+  }
+  const zone = Intl.DateTimeFormat().resolvedOptions().timeZone ?? ''
+  const tz = new Intl.DateTimeFormat(undefined, { timeZoneName: 'short' }).formatToParts(now).find(part => part.type === 'timeZoneName')?.value ?? ''
+  const month = (now.getMonth() + (SOUTHERN.test(zone) ? 6 : 0)) % 12
+  const season = month === 11 || month < 2 ? 'winter' : month < 5 ? 'spring' : month < 8 ? 'summer' : 'autumn'
+
+  return source.split('__TZ__').join(clean(tz)).split('__SEASON__').join(season)
 }
 ` : ''}
 ${lifecycle}
@@ -189,6 +216,29 @@ test('the sky starts at the local time of day', async $ => {
 })
 `
 
+// A calendar theme's scene must show today's date and a season, with no mark left unfilled.
+const calendarTest = (t) => `import { expect, test } from 'claude-code/testing'
+
+const BACKDROP = {
+  plugin: '${t.name}',
+  component: 'Backdrop',
+  requestId: 'backdrop',
+  surface: 'desktop',
+  props: { scene: '${t.name}', plugin: '${t.name}', glass: { blur: 0, tint: '${t.tint}', opacity: ${t.opacity} } },
+} as const
+
+test('the calendar fills in today, the time zone and the season', async $ => {
+  const ui = await $.ui.mount(BACKDROP)
+  const svg = await ui.find({ type: 'Svg' })
+  const source = String((svg as { props?: { source?: unknown } } | undefined)?.props?.source ?? '')
+
+  expect(/__(WEEKDAY|MONTH|DAY)\\d+__|__TZ__|__SEASON__/.test(source)).toBe(false)
+  expect(source.includes(\`>\${new Date().getDate()}</text>\`)).toBe(true)
+  expect(/\\.s-(spring|summer|autumn|winter)\\{display:inline\\}/.test(source)).toBe(true)
+  await ui.unmount()
+})
+`
+
 const stillTest = (t) => `import { expect, test } from 'claude-code/testing'
 
 test('session start sets the colors and a still ground', async ($, on) => {
@@ -219,6 +269,8 @@ for (const t of THEMES) {
   if (t.ground) continue
   const svg = (await import(pathToFileURL(sceneFile(t)).href)).default()
   if (t.clock && !svg.includes(CLOCK_MARK)) failures.push(`${t.name}: a clock theme without the ${CLOCK_MARK} start mark`)
+  if (t.calendar && !t.clock) failures.push(`${t.name}: a calendar theme must also be a clock theme`)
+  if (t.calendar) for (const mark of CALENDAR_MARKS) if (!svg.includes(mark)) failures.push(`${t.name}: a calendar theme without ${mark}`)
   const media = (svg.match(/@media/g) ?? []).length
   if (media !== 1 || !svg.includes('@media (prefers-reduced-motion:reduce)')) failures.push(`${t.name}: an @media rule other than reduced-motion`)
   if (svg.includes('shape-rendering')) failures.push(`${t.name}: shape-rendering`)
@@ -246,6 +298,7 @@ for (const t of THEMES) {
   copyFileSync(join(TOOLS, 'shared', 'make-colors.d.ts'), join(dir, 'hooks', 'make-colors.d.ts'))
   writeFileSync(join(dir, 'tests', t.ground ? 'theme.test.tsx' : 'backdrop.test.tsx'), t.ground ? stillTest(t) : sceneTest(t))
   if (t.clock) writeFileSync(join(dir, 'tests', 'clock.test.tsx'), clockTest(t))
+  if (t.calendar) writeFileSync(join(dir, 'tests', 'calendar.test.tsx'), calendarTest(t))
   const icon = join(TOOLS, '..', 'previews', 'icons', `${t.name}.png`)
   if (existsSync(icon)) copyFileSync(icon, join(dir, '.claude-plugin', 'icon.png'))
   console.log(`${t.name}: ${t.ground ? 'still' : `${t.svg.length} chars`}${existsSync(icon) ? ', icon' : ''}`)

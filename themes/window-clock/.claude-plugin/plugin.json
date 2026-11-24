@@ -1,0 +1,15 @@
+{
+  "name": "window-clock",
+  "version": "0.1.0",
+  "description": "A pixel-art room with a clock and calendar on your local time, and a window whose view follows the time of day and the season: blossoms, summer green, autumn leaves, or snow.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
