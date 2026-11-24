@@ -287,6 +287,14 @@
       }
     },
     {
+      "name": "penguin-cove",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/penguin-cove-0.1.0.zip",
+        "sha256": "e60676504f8bf2639fbb79e24aa7ca34bf161fb140c049b257b678ee0de3c56f"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

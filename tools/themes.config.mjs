@@ -379,6 +379,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#0c0b14', 'surface-1': '#11101a', 'surface-2': '#161520', 'surface-3': '#1b1a26', 'text-primary': '#f4f0ea', 'text-secondary': '#d4cfd8', 'text-muted': '#9e98a8' },
   },
   {
+    name: 'penguin-cove',
+    label: 'Penguin Cove',
+    description: 'Cute pixel-art penguins on a moonlit ice shore: one waving as hearts pop up, a fluffy chick hopping, one waddling, one fishing, and one sliding by on its belly.',
+    alt: 'Pixel-art penguins at twilight on an ice shore with an igloo, a fishing hole, icebergs, and a full moon',
+    tint: '#1c1840',
+    opacity: 0.5,
+    roles: { accent: '#ff9fc4', danger: '#ff6b7a', success: '#6fe0b8', warning: '#ffcf7a', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#1c1840', 'surface-1': '#211d48', 'surface-2': '#262250', 'surface-3': '#2b2757', 'text-primary': '#f4f0ff', 'text-secondary': '#d4cfec', 'text-muted': '#a49cc8' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',
