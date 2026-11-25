@@ -421,6 +421,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1a1424', 'surface-1': '#20192c', 'surface-2': '#261e34', 'surface-3': '#2c233b', 'text-primary': '#fbf2ec', 'text-secondary': '#e0d2d6', 'text-muted': '#ac9ca8' },
   },
   {
+    name: 'harvest-home',
+    label: 'Harvest Home',
+    description: 'A cozy pixel-art Thanksgiving harvest at golden hour: a farmhouse aglow, a pumpkin patch, a scarecrow, a turkey strutting, string lights, falling leaves, and geese flying south.',
+    alt: 'Pixel-art autumn farm at sunset with a farmhouse, red barn, pumpkin patch, hay bales, a scarecrow, and a turkey with its tail fanned',
+    tint: '#22161c',
+    opacity: 0.5,
+    roles: { accent: '#f0883a', danger: '#ff5a5a', success: '#8fd06a', warning: '#ffd27a', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#22161c', 'surface-1': '#281b22', 'surface-2': '#2e2028', 'surface-3': '#34252e', 'text-primary': '#fdf2e8', 'text-secondary': '#e6d2c8', 'text-muted': '#b29c94' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'sakura-day',
     label: 'Sakura Day',

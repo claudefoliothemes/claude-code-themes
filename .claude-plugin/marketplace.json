@@ -319,6 +319,14 @@
       }
     },
     {
+      "name": "harvest-home",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/harvest-home-0.1.0.zip",
+        "sha256": "ec155f4f62954a009006ae076f591ce9511c6c931ede9425065d83cda0fcfcea"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

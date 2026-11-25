@@ -1,0 +1,15 @@
+{
+  "name": "harvest-home",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art Thanksgiving harvest at golden hour: a farmhouse aglow, a pumpkin patch, a scarecrow, a turkey strutting, string lights, falling leaves, and geese flying south.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
