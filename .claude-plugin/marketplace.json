@@ -311,11 +311,27 @@
       }
     },
     {
+      "name": "snow-globe",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/snow-globe-0.1.0.zip",
+        "sha256": "d73f2404d92601ec88c6c0aee7f8b1194dd3aff8ea3f9189db229276f8a14af4"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",
         "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/morning-light-0.1.0.zip",
         "sha256": "8f234059be2ab8265dbaa2bc944dd9c56f552deed12f0f3f07067ed88a7d4211"
+      }
+    },
+    {
+      "name": "sakura-day",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/sakura-day-0.1.0.zip",
+        "sha256": "831180033e98dba0ea28af74ee28ddd6ee650879e9e4bbca355b53b6783416bd"
       }
     },
     {

@@ -411,6 +411,28 @@ export const THEMES = [
     anchors: { 'surface-0': '#0e0818', 'surface-1': '#130c20', 'surface-2': '#181028', 'surface-3': '#1d1430', 'text-primary': '#f6eeff', 'text-secondary': '#d8cce8', 'text-muted': '#a496bc' },
   },
   {
+    name: 'snow-globe',
+    label: 'Snow Globe',
+    description: 'A snow globe on a windowsill on a winter night: a tiny village inside with lit windows and a twinkling tree, snow swirling, bokeh lights, and cocoa steaming.',
+    alt: 'A snow globe with a tiny snowy village and Christmas tree on a windowsill, a mug of cocoa, and snow falling outside the window',
+    tint: '#1a1424',
+    opacity: 0.5,
+    roles: { accent: '#ff8a6a', danger: '#ff5a6e', success: '#6fd8a0', warning: '#ffd27a', pro: '#b8a6ff' },
+    anchors: { 'surface-0': '#1a1424', 'surface-1': '#20192c', 'surface-2': '#261e34', 'surface-3': '#2c233b', 'text-primary': '#fbf2ec', 'text-secondary': '#e0d2d6', 'text-muted': '#ac9ca8' },
+  },
+  {
+    // A light theme with a moving scene: needs the app in light mode.
+    name: 'sakura-day',
+    label: 'Sakura Day',
+    mode: 'light',
+    description: 'A light theme on a bright spring day in a Japanese garden: cherry trees in bloom, petals drifting, a red arched bridge over a koi pond, and a far snowy peak.',
+    alt: 'A Japanese garden in spring with cherry trees in bloom, a red arched bridge over a pond, koi, and a snow-capped mountain',
+    tint: '#f6f0f2',
+    opacity: 0.6,
+    roles: { accent: '#c8487a', danger: '#c53030', success: '#2f855a', warning: '#b7791f', pro: '#6b46c1' },
+    anchors: { 'surface-0': '#efe6ea', 'surface-1': '#f7f1f3', 'surface-2': '#fcf9fa', 'text-primary': '#2a2228', 'text-secondary': '#4d4248', 'text-muted': '#665a62' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

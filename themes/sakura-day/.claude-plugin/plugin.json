@@ -1,0 +1,15 @@
+{
+  "name": "sakura-day",
+  "version": "0.1.0",
+  "description": "A light theme on a bright spring day in a Japanese garden: cherry trees in bloom, petals drifting, a red arched bridge over a koi pond, and a far snowy peak.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

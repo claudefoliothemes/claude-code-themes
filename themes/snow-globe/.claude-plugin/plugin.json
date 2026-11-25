@@ -1,0 +1,15 @@
+{
+  "name": "snow-globe",
+  "version": "0.1.0",
+  "description": "A snow globe on a windowsill on a winter night: a tiny village inside with lit windows and a twinkling tree, snow swirling, bokeh lights, and cocoa steaming.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
