@@ -19,7 +19,7 @@ Forty-one themes for the Claude Code desktop app. Thirty-eight paint the app dar
 | ![Christmas Eve](previews/christmas-eve.gif)<br>**Christmas Eve**: a crackling fire, stockings, a twinkling tree, and a toy train | ![Summit Sunrise](previews/summit-sunrise.gif)<br>**Summit Sunrise**: a mountain sunrise with a new line of motivation every 15 seconds |
 | ![Window Clock](previews/window-clock.gif)<br>**Window Clock**: a clock and calendar on your local time, and a window that follows the hour and the season | ![Low Orbit](previews/low-orbit.gif)<br>**Low Orbit**: night over Earth from orbit, city lights, an aurora, and a space station |
 | ![Penguin Cove](previews/penguin-cove.gif)<br>**Penguin Cove**: cute pixel penguins waving, waddling, fishing, and sliding on a moonlit shore | ![Beach Bungalow](previews/beach-bungalow.gif)<br>**Beach Bungalow**: a cozy beach porch at sunset, waves, string lights, and a lighthouse |
-| ![Neon District](previews/neon-district.gif)<br>**Neon District**: a rainy cyberpunk street, neon signs, a turning hologram, and wet reflections | |
+| ![Neon District](previews/neon-district.gif)<br>**Neon District**: a rainy cyberpunk street with neon signs, billboards, a sky-train, and the city mirrored in the wet street | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -66,6 +66,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 |---|---|
 | Digital Rain | 0.44 |
 | Neon Horizon | 0.32 |
+| Neon District | 0.30 |
 | Braille Stars | 0.29 |
 | Ink Wave | 0.29 |
 | Lofi Rain | 0.28 |
@@ -79,7 +80,6 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Holiday Lights | 0.25 |
 | Sleigh Ride | 0.25 |
 | Pixel Café | 0.25 |
-| Neon District | 0.25 |
 | Rooftop Santa | 0.21 |
 | Tokyo Crossing | 0.24 |
 | Pixel Cosmos | 0.24 |

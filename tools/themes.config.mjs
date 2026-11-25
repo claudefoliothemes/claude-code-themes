@@ -401,8 +401,10 @@ export const THEMES = [
   {
     name: 'neon-district',
     label: 'Neon District',
-    description: 'A rain-soaked cyberpunk street at night: glowing neon signs that flicker and shift color, a wireframe hologram turning overhead, and the wet street reflecting it all.',
-    alt: 'Cyberpunk alley at night with neon blade signs reading HOTEL, BAR, OPEN, and NOODLES, a rotating hologram cube, rain, and reflections on the street',
+    // 0.1.1: redrawn in layers (far towers, billboards, a sky-train, detailed near facades, a mirrored wet street).
+    version: '0.1.1',
+    description: 'A rain-soaked cyberpunk street at night: neon signs and glowing shopfronts, animated billboards, a sky-train gliding past, and the wet street mirroring the whole city.',
+    alt: 'Cyberpunk street at night with neon signs reading HOTEL, BAR, ARCADE, RAMEN, and 24H MART, billboards, a sky-train, rain, and the city reflected in the wet street',
     tint: '#0e0818',
     opacity: 0.5,
     roles: { accent: '#ff2fd0', danger: '#ff4f6b', success: '#39ff9a', warning: '#ffe14d', pro: '#22e6ff' },

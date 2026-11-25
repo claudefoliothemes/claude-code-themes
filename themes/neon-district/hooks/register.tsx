@@ -71,6 +71,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="Cyberpunk alley at night with neon blade signs reading HOTEL, BAR, OPEN, and NOODLES, a rotating hologram cube, rain, and reflections on the street" />
+    return <Svg source={SCENE} alt="Cyberpunk street at night with neon signs reading HOTEL, BAR, ARCADE, RAMEN, and 24H MART, billboards, a sky-train, rain, and the city reflected in the wet street" />
   })
 }
