@@ -389,6 +389,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1c1840', 'surface-1': '#211d48', 'surface-2': '#262250', 'surface-3': '#2b2757', 'text-primary': '#f4f0ff', 'text-secondary': '#d4cfec', 'text-muted': '#a49cc8' },
   },
   {
+    name: 'beach-bungalow',
+    label: 'Beach Bungalow',
+    description: 'A cozy pixel-art beach porch at sunset: string lights and a glowing window, waves rolling up the sand, a palm swaying, a lighthouse blinking, and a crab scuttling by.',
+    alt: 'Pixel-art beach hut porch at sunset with string lights, deck chairs, a palm tree, a lighthouse, and the sun setting over the ocean',
+    tint: '#1e1a3a',
+    opacity: 0.5,
+    roles: { accent: '#ffa26a', danger: '#ff6b7a', success: '#6fd8a8', warning: '#ffd27a', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#1e1a3a', 'surface-1': '#241f42', 'surface-2': '#2a244a', 'surface-3': '#302951', 'text-primary': '#fdf2ea', 'text-secondary': '#e4d2d4', 'text-muted': '#b09ca8' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',

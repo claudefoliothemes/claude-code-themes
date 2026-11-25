@@ -295,6 +295,14 @@
       }
     },
     {
+      "name": "beach-bungalow",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/beach-bungalow-0.1.0.zip",
+        "sha256": "adba80ec537249605e1467927e38519f5101af4a673fcd84a22dd50f0c49873f"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

@@ -1,0 +1,15 @@
+{
+  "name": "beach-bungalow",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art beach porch at sunset: string lights and a glowing window, waves rolling up the sand, a palm swaying, a lighthouse blinking, and a crab scuttling by.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
