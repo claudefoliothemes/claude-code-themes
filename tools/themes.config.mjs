@@ -421,6 +421,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1a1424', 'surface-1': '#20192c', 'surface-2': '#261e34', 'surface-3': '#2c233b', 'text-primary': '#fbf2ec', 'text-secondary': '#e0d2d6', 'text-muted': '#ac9ca8' },
   },
   {
+    name: 'vibe-board',
+    label: 'Vibe Board',
+    description: 'A glowing LED board on a brick wall scrolling positive lines in changing colors: one day you will be wealthy, it is all worth it, bet on yourself, and more.',
+    alt: 'An LED dot-matrix sign on a dim brick wall scrolling the words ONE DAY YOU WILL BE WEALTHY, with a plant and a neon heart on a shelf',
+    tint: '#160e14',
+    opacity: 0.5,
+    roles: { accent: '#ffb020', danger: '#ff4f6b', success: '#6aff8a', warning: '#ffd166', pro: '#c08aff' },
+    anchors: { 'surface-0': '#160e14', 'surface-1': '#1c131a', 'surface-2': '#221820', 'surface-3': '#281d26', 'text-primary': '#fdf2ea', 'text-secondary': '#e2d0cc', 'text-muted': '#ae9a9a' },
+  },
+  {
     name: 'harvest-home',
     label: 'Harvest Home',
     description: 'A cozy pixel-art Thanksgiving harvest at golden hour: a farmhouse aglow, a pumpkin patch, a scarecrow, a turkey strutting, string lights, falling leaves, and geese flying south.',

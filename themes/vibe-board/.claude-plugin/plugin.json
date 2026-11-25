@@ -1,0 +1,15 @@
+{
+  "name": "vibe-board",
+  "version": "0.1.0",
+  "description": "A glowing LED board on a brick wall scrolling positive lines in changing colors: one day you will be wealthy, it is all worth it, bet on yourself, and more.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

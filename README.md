@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Forty-four themes for the Claude Code desktop app. Forty paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Three are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Forty-five themes for the Claude Code desktop app. Forty-one paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Three are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -21,6 +21,7 @@ Forty-four themes for the Claude Code desktop app. Forty paint the app dark and 
 | ![Penguin Cove](previews/penguin-cove.gif)<br>**Penguin Cove**: cute pixel penguins waving, waddling, fishing, and sliding on a moonlit shore | ![Beach Bungalow](previews/beach-bungalow.gif)<br>**Beach Bungalow**: a cozy beach porch at sunset, waves, string lights, and a lighthouse |
 | ![Neon District](previews/neon-district.gif)<br>**Neon District**: a rainy cyberpunk street with neon signs, billboards, a sky-train, and the city mirrored in the wet street | ![Snow Globe](previews/snow-globe.gif)<br>**Snow Globe**: a tiny snowy village swirling inside a globe on a winter windowsill |
 | ![Sakura Day](previews/sakura-day.gif)<br>**Sakura Day**: a light theme, cherry blossoms drifting over a red bridge and a koi pond | ![Harvest Home](previews/harvest-home.gif)<br>**Harvest Home**: a Thanksgiving harvest at golden hour, pumpkins, a scarecrow, and a strutting turkey |
+| ![Vibe Board](previews/vibe-board.gif)<br>**Vibe Board**: an LED board scrolling positive lines, like one day you will be wealthy | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -37,7 +38,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `vibe-board`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -97,6 +98,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Sky Clock | 0.20 |
 | Starlit Cabin | 0.20 |
 | Harvest Home | 0.20 |
+| Vibe Board | 0.20 |
 | Good Vibes | 0.20 |
 | Cyber City | 0.20 |
 | Lantern Alley | 0.20 |
