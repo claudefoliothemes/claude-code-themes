@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Forty themes for the Claude Code desktop app. Thirty-seven paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Forty-one themes for the Claude Code desktop app. Thirty-eight paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Two are light: Morning Light, a sunlit room that moves, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -19,6 +19,7 @@ Forty themes for the Claude Code desktop app. Thirty-seven paint the app dark an
 | ![Christmas Eve](previews/christmas-eve.gif)<br>**Christmas Eve**: a crackling fire, stockings, a twinkling tree, and a toy train | ![Summit Sunrise](previews/summit-sunrise.gif)<br>**Summit Sunrise**: a mountain sunrise with a new line of motivation every 15 seconds |
 | ![Window Clock](previews/window-clock.gif)<br>**Window Clock**: a clock and calendar on your local time, and a window that follows the hour and the season | ![Low Orbit](previews/low-orbit.gif)<br>**Low Orbit**: night over Earth from orbit, city lights, an aurora, and a space station |
 | ![Penguin Cove](previews/penguin-cove.gif)<br>**Penguin Cove**: cute pixel penguins waving, waddling, fishing, and sliding on a moonlit shore | ![Beach Bungalow](previews/beach-bungalow.gif)<br>**Beach Bungalow**: a cozy beach porch at sunset, waves, string lights, and a lighthouse |
+| ![Neon District](previews/neon-district.gif)<br>**Neon District**: a rainy cyberpunk street, neon signs, a turning hologram, and wet reflections | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -35,7 +36,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `morning-light`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -78,6 +79,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Holiday Lights | 0.25 |
 | Sleigh Ride | 0.25 |
 | Pixel Café | 0.25 |
+| Neon District | 0.25 |
 | Rooftop Santa | 0.21 |
 | Tokyo Crossing | 0.24 |
 | Pixel Cosmos | 0.24 |

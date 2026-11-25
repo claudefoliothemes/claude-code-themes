@@ -303,6 +303,14 @@
       }
     },
     {
+      "name": "neon-district",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/neon-district-0.1.0.zip",
+        "sha256": "71a11e53af419cc2dc3c284338ba7ee0a1b921b008a3c94926d2707c415d3360"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

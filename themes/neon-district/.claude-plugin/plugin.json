@@ -1,0 +1,15 @@
+{
+  "name": "neon-district",
+  "version": "0.1.0",
+  "description": "A rain-soaked cyberpunk street at night: glowing neon signs that flicker and shift color, a wireframe hologram turning overhead, and the wet street reflecting it all.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

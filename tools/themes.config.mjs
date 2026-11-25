@@ -399,6 +399,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1e1a3a', 'surface-1': '#241f42', 'surface-2': '#2a244a', 'surface-3': '#302951', 'text-primary': '#fdf2ea', 'text-secondary': '#e4d2d4', 'text-muted': '#b09ca8' },
   },
   {
+    name: 'neon-district',
+    label: 'Neon District',
+    description: 'A rain-soaked cyberpunk street at night: glowing neon signs that flicker and shift color, a wireframe hologram turning overhead, and the wet street reflecting it all.',
+    alt: 'Cyberpunk alley at night with neon blade signs reading HOTEL, BAR, OPEN, and NOODLES, a rotating hologram cube, rain, and reflections on the street',
+    tint: '#0e0818',
+    opacity: 0.5,
+    roles: { accent: '#ff2fd0', danger: '#ff4f6b', success: '#39ff9a', warning: '#ffe14d', pro: '#22e6ff' },
+    anchors: { 'surface-0': '#0e0818', 'surface-1': '#130c20', 'surface-2': '#181028', 'surface-3': '#1d1430', 'text-primary': '#f6eeff', 'text-secondary': '#d8cce8', 'text-muted': '#a496bc' },
+  },
+  {
     // A light theme with a moving scene: needs the app in light mode.
     name: 'morning-light',
     label: 'Morning Light',
