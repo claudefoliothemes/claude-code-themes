@@ -343,6 +343,22 @@
       }
     },
     {
+      "name": "graphite",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/graphite-0.1.0.zip",
+        "sha256": "9d30586416bbfb39e216dc3e700def1f896da909ff50b62fef57edb2a6ba7f60"
+      }
+    },
+    {
+      "name": "night-train",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/night-train-0.1.0.zip",
+        "sha256": "384ed259222a55ed91740e03ca9285691c92b353fde98bc32b917058af575735"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

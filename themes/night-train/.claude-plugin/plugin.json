@@ -1,0 +1,15 @@
+{
+  "name": "night-train",
+  "version": "0.1.0",
+  "description": "An anime-style night train ride: city lights, a crossing, and catenary poles slide past rain-flecked windows while tea steams on the ledge and the straps sway.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
