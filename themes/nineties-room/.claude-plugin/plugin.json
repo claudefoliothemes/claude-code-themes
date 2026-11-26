@@ -1,0 +1,15 @@
+{
+  "name": "nineties-room",
+  "version": "0.1.0",
+  "description": "A pixel-art 90s bedroom at night: a CRT TV playing a side-scroller, a classic gray 16-bit console with two controllers, a beige PC with a starfield screensaver, and a lava lamp.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

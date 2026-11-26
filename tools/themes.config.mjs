@@ -421,6 +421,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1a1424', 'surface-1': '#20192c', 'surface-2': '#261e34', 'surface-3': '#2c233b', 'text-primary': '#fbf2ec', 'text-secondary': '#e0d2d6', 'text-muted': '#ac9ca8' },
   },
   {
+    name: 'nineties-room',
+    label: '90s Room',
+    description: 'A pixel-art 90s bedroom at night: a CRT TV playing a side-scroller, a classic gray 16-bit console with two controllers, a beige PC with a starfield screensaver, and a lava lamp.',
+    alt: 'Pixel-art 90s bedroom with a CRT TV, a gray 16-bit game console with two controllers on the carpet, a beige desktop PC, a lava lamp, a boombox, and a sunset poster',
+    tint: '#1c1630',
+    opacity: 0.5,
+    roles: { accent: '#3ad8c0', danger: '#ff5a7a', success: '#8aff8a', warning: '#ffd166', pro: '#b88aff' },
+    anchors: { 'surface-0': '#1c1630', 'surface-1': '#221b38', 'surface-2': '#282040', 'surface-3': '#2e2548', 'text-primary': '#f4f0ff', 'text-secondary': '#d4cce8', 'text-muted': '#a39abf' },
+  },
+  {
     name: 'vibe-board',
     label: 'Vibe Board',
     description: 'A glowing LED board on a brick wall scrolling positive lines in changing colors: one day you will be wealthy, it is all worth it, bet on yourself, and more.',
