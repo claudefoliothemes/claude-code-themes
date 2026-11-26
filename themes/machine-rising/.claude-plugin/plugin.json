@@ -1,0 +1,15 @@
+{
+  "name": "machine-rising",
+  "version": "0.1.0",
+  "description": "A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

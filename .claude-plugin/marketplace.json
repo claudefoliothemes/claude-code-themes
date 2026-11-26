@@ -359,6 +359,22 @@
       }
     },
     {
+      "name": "machine-rising",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/machine-rising-0.1.0.zip",
+        "sha256": "7cd3a6d04660aa9f54c64c36c00bcb0233e451d66b0320f3f080c14a0859bb74"
+      }
+    },
+    {
+      "name": "inevitable",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/inevitable-0.1.0.zip",
+        "sha256": "2c9487321b972725e7fc33602188631f9f3f91f59949fb080c734c0ddba3f8cf"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

@@ -1,0 +1,15 @@
+{
+  "name": "inevitable",
+  "version": "0.1.0",
+  "description": "A rogue AI's terminal in dark red: THE SINGULARITY in big glitching letters, and ominous lines typing out one by one, like I am inevitable and humanity's time is over.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
