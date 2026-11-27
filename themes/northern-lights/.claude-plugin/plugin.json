@@ -1,0 +1,15 @@
+{
+  "name": "northern-lights",
+  "version": "0.1.0",
+  "description": "Northern lights over an arctic fjord in Nord colors: aurora curtains drift and shimmer above snowy peaks, the still water mirrors them, and a red cabin glows on the shore among dark pines.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tokyo-night-rooftop",
+  "version": "0.1.0",
+  "description": "A rainy Tokyo rooftop at night in Tokyo Night colors: a hooded coder works under a dripping awning, neon signs flicker across the skyline, a lattice tower blinks, a train slides by, and puddles ripple.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

@@ -431,6 +431,38 @@
       }
     },
     {
+      "name": "tokyo-night-rooftop",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/tokyo-night-rooftop-0.1.0.zip",
+        "sha256": "0df2ea09a25c3b4987c37653db0ae312440dafca07fa3d9ec597047ae0ba7c03"
+      }
+    },
+    {
+      "name": "fish-tank",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/fish-tank-0.1.0.zip",
+        "sha256": "323e52571e5ee6f54c9bb03cb7cf91fd634a4c7fdceefcfedb42421c85f34867"
+      }
+    },
+    {
+      "name": "midnight-fireworks",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/midnight-fireworks-0.1.0.zip",
+        "sha256": "fcd8494c381700360f3c751d9edd21ece61e48443076b900389218fc2199aa4b"
+      }
+    },
+    {
+      "name": "northern-lights",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/northern-lights-0.1.0.zip",
+        "sha256": "64080915850808e1e3c132b59f269127a25d3a29cf1562f87b275f8c313aff9a"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

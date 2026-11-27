@@ -1,0 +1,15 @@
+{
+  "name": "fish-tank",
+  "version": "0.1.0",
+  "description": "A retro pixel-art fish tank like the old screensaver: goldfish, an angelfish, neon tetras, a blue tang, and clownfish swim by, jellyfish pulse upward, a treasure chest opens, and plants sway.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

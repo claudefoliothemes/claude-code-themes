@@ -1,0 +1,15 @@
+{
+  "name": "midnight-fireworks",
+  "version": "0.1.0",
+  "description": "New Year's Eve at midnight: fireworks burst over a city skyline in gold, pink, cyan, green, and purple, rockets climbing first, each mirrored in the river, while a clock tower reads twelve.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
