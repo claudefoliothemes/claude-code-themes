@@ -431,11 +431,11 @@
       }
     },
     {
-      "name": "tokyo-night-rooftop",
+      "name": "tokyo-night",
       "source": {
         "source": "archive",
-        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/tokyo-night-rooftop-0.1.0.zip",
-        "sha256": "0df2ea09a25c3b4987c37653db0ae312440dafca07fa3d9ec597047ae0ba7c03"
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/tokyo-night-0.1.0.zip",
+        "sha256": "0daf9c02812f1e676890dd2942f78793d3eb861362db03f4c21e0dfdc8f74225"
       }
     },
     {
@@ -458,8 +458,8 @@
       "name": "northern-lights",
       "source": {
         "source": "archive",
-        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/northern-lights-0.1.0.zip",
-        "sha256": "64080915850808e1e3c132b59f269127a25d3a29cf1562f87b275f8c313aff9a"
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/northern-lights-0.1.1.zip",
+        "sha256": "0f3cdacfc7b8219df0e38dcd7c195cf48685709d1c1a61c72d799b6842bac1ed"
       }
     },
     {

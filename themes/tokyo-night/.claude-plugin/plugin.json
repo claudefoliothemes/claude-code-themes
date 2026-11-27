@@ -1,0 +1,15 @@
+{
+  "name": "tokyo-night",
+  "version": "0.1.0",
+  "description": "A Tokyo street at night in Tokyo Night colors: cherry blossoms drift down, paper lanterns sway, neon signs flicker, Tokyo Tower glows in orange and white, and Mt. Fuji stands snowcapped under a full moon.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

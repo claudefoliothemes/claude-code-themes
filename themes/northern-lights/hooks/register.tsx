@@ -71,6 +71,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="Green and violet aurora over snowy mountains and a fjord in muted Nord colors, with a red cabin with a lit window and pines on the shore" />
+    return <Svg source={SCENE} alt="Pixel-art green aurora ribbon in an S-curve with violet curtain rays over a starry blue sky, snowy mountains, and a frozen lake" />
   })
 }

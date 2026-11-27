@@ -1,10 +1,10 @@
 import { expect, test } from 'claude-code/testing'
 
 const BACKDROP = {
-  plugin: 'tokyo-night-rooftop',
+  plugin: 'tokyo-night',
   component: 'Backdrop',
   requestId: 'backdrop',
-  props: { scene: 'tokyo-night-rooftop', plugin: 'tokyo-night-rooftop', glass: { blur: 0, tint: '#1a1b26', opacity: 0.5 } },
+  props: { scene: 'tokyo-night', plugin: 'tokyo-night', glass: { blur: 0, tint: '#1a1b26', opacity: 0.5 } },
 } as const
 
 test('the backdrop draws its scene on desktop and mobile', async $ => {

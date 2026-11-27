@@ -483,10 +483,10 @@ export const THEMES = [
     anchors: { 'surface-0': '#1e1e2e', 'surface-1': '#252536', 'surface-2': '#2b2c3e', 'surface-3': '#313244', 'text-primary': '#cdd6f4', 'text-secondary': '#bac2de', 'text-muted': '#a6adc8' },
   },
   {
-    name: 'tokyo-night-rooftop',
-    label: 'Tokyo Night Rooftop',
-    description: "A rainy Tokyo rooftop at night in Tokyo Night colors: a hooded coder works under a dripping awning, neon signs flicker across the skyline, a lattice tower blinks, a train slides by, and puddles ripple.",
-    alt: "Pixel-art rainy rooftop at night in Tokyo Night colors with a hooded coder at a laptop under an awning, a vending machine, a water tank, neon signs, and an orange lattice tower",
+    name: 'tokyo-night',
+    label: 'Tokyo Night',
+    description: "A Tokyo street at night in Tokyo Night colors: cherry blossoms drift down, paper lanterns sway, neon signs flicker, Tokyo Tower glows in orange and white, and Mt. Fuji stands snowcapped under a full moon.",
+    alt: "Pixel-art Tokyo street at night with cherry blossoms, red paper lanterns, neon signs, Tokyo Tower, and snowcapped Mt. Fuji under a full moon",
     tint: '#1a1b26',
     opacity: 0.5,
     roles: { accent: '#7aa2f7', danger: '#f7768e', success: '#9ece6a', warning: '#e0af68', pro: '#bb9af7' },
@@ -515,8 +515,10 @@ export const THEMES = [
   {
     name: 'northern-lights',
     label: 'Northern Lights',
-    description: "Northern lights over an arctic fjord in Nord colors: aurora curtains drift and shimmer above snowy peaks, the still water mirrors them, and a red cabin glows on the shore among dark pines.",
-    alt: "Green and violet aurora over snowy mountains and a fjord in muted Nord colors, with a red cabin with a lit window and pines on the shore",
+    // 0.1.1: redrawn in pixel art, a sweeping S-curve aurora with curtain rays over snowy peaks.
+    version: '0.1.1',
+    description: "Pixel-art northern lights in Nord colors: a glowing green aurora sweeps across the stars in an S-curve, with teal and violet curtains of light rippling over snowy peaks and a frozen lake.",
+    alt: "Pixel-art green aurora ribbon in an S-curve with violet curtain rays over a starry blue sky, snowy mountains, and a frozen lake",
     tint: '#2b303b',
     opacity: 0.45,
     roles: { accent: '#88c0d0', danger: '#bf616a', success: '#a3be8c', warning: '#ebcb8b', pro: '#b48ead' },

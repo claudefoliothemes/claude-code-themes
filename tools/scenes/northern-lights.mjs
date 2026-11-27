@@ -1,88 +1,94 @@
-// Northern lights over an arctic fjord in Nord colors: aurora curtains in green, teal, frost blue,
-// and purple drift and shimmer across a starry sky, snowy peaks frame still water that mirrors
-// everything, and a little red cabin glows on the shore among dark pines with smoke from the
-// chimney. A shooting star now and then.
-// Palette from nordtheme (MIT). Vector art. Every change lands on the shared 0.1 s tick.
-import { H, W, f, rng, svgDoc } from './_lib.mjs'
+// Northern lights in pixel art: a great ribbon of green aurora sweeps down the sky in an S-curve,
+// bright mint at its core, with curtains of teal rays hanging below it and violet rays rising above,
+// swaying slowly while light pulses along the band and rays flicker. Stars twinkle over snowy
+// mountains, and a frozen lake catches the glow.
+// Colors from nordtheme (MIT) for the land, sky, and app, with a brighter aurora. Original art on a
+// 200 x 125 grid of 8-unit pixels; see-through glow is pre-blended against the sky, row by row.
+// Every change lands on the shared 0.1 s tick.
+import { H, W, rng, svgDoc } from './_lib.mjs'
+import { pixelGrid } from './_pixel.mjs'
 
-const NORD = ['#2e3440', '#3b4252', '#434c5e', '#4c566a', '#d8dee9', '#e5e9f0', '#eceff4', '#8fbcbb', '#88c0d0', '#81a1c1', '#5e81ac', '#bf616a', '#d08770', '#ebcb8b', '#a3be8c', '#b48ead']
-const WL = 720 // waterline
+const P = 8, COLS = W / P, ROWS = H / P
+const SKY = ['#131726', '#181d31', '#1d243d', '#222c4a', '#283559', '#2e3f69', '#35497a', '#3c548a']
+const hex = (c) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16))
+const mix = (a, b, t) => '#' + hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * t).toString(16).padStart(2, '0')).join('')
+const LEVELS = [0.18, 0.32, 0.5, 0.7, 0.9]
+const q = (a) => { let best = -1; for (let i = 0; i < LEVELS.length; i++) if (a >= LEVELS[i] - 0.07) best = i; return best < 0 ? 0 : LEVELS[best] }
 
 export default function scene() {
-  const rnd = rng(0x40e7)
-  const defs = [
-    `<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14161c"/><stop offset=".55" stop-color="#232833"/><stop offset="1" stop-color="${NORD[0]}"/></linearGradient>`,
-    `<linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a303c"/><stop offset="1" stop-color="#1c2028"/></linearGradient>`,
-    `<clipPath id="below"><rect y="${WL}" width="${W}" height="${H - WL}"/></clipPath>`,
-    `<radialGradient id="win"><stop offset="0" stop-color="${NORD[13]}" stop-opacity=".4"/><stop offset="1" stop-color="${NORD[13]}" stop-opacity="0"/></radialGradient>`,
-  ]
+  const rnd = rng(0xa0a7)
+  const sky = pixelGrid(COLS, ROWS), front = pixelGrid(COLS, ROWS)
+  const layer = () => pixelGrid(COLS, ROWS)
+  const frames = (grids, period) => grids.map((g, k) => `<g style="animation:f${grids.length} ${period}s steps(1,end) -${(((grids.length - k) % grids.length) * period / grids.length).toFixed(1)}s infinite">${g.svg(P)}</g>`).join('')
+  const HZ = 104
+  const STEPS = 26, SKYS = Array.from({ length: STEPS }, (_, i) => { const t = (i / (STEPS - 1)) * (SKY.length - 1), k = Math.min(SKY.length - 2, Math.floor(t)); return mix(SKY[k], SKY[k + 1], t - k) })
+  const skyAt = (y) => SKYS[Math.min(STEPS - 1, Math.floor((Math.max(0, y) / HZ) * STEPS))]
+  for (let y = 0; y < ROWS; y++) sky.rect(0, y, COLS, 1, skyAt(y))
+  const twinkle = [0, 1].map(() => layer())
+  for (let i = 0; i < 90; i++) { const x = Math.floor(rnd() * COLS), y = Math.floor(rnd() * 84); sky.set(x, y, mix(skyAt(y), '#eceff4', 0.6)); if (i % 5 === 0) twinkle[i % 2].set(x, y, '#ffffff') }
 
-  // Aurora curtains: a ribbon two screens wide (so it can drift and repeat) with bright rays inside.
-  const STOPS = {
-    green: [[0, '#7ee0a0', 0], [0.06, '#d4ffdc', 1], [0.18, '#7ee0a0', 0.9], [0.42, '#7cd6d0', 0.55], [0.72, NORD[8], 0.22], [1, NORD[15], 0]],
-    violet: [[0, '#c89ad8', 0], [0.12, '#e8c8f0', 0.6], [0.35, '#c89ad8', 0.42], [0.7, NORD[9], 0.16], [1, NORD[9], 0]],
-  }
-  const RAYS = [[0, '#eaffe8', 0], [0.06, '#eaffe8', 0.7], [0.4, '#7cd6d0', 0.25], [1, NORD[8], 0]]
-  const grad = (id, y1, y2, stops) => `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="${y1}" x2="0" y2="${y2}">${stops.map(([o, c, a]) => `<stop offset="${o}" stop-color="${c}" stop-opacity="${a}"/>`).join('')}</linearGradient>`
-  const curtain = (id, base, amp, len, hMin, hMax, phase, look, rays) => {
-    defs.push(grad(id + 'g', base + amp * 1.4, base - hMax - amp, STOPS[look]), grad(id + 'r', base + amp * 1.4, base - hMax - amp, RAYS))
-    const pts = [], X0 = -100, X1 = 3300
-    for (let x = X0; x <= X1; x += 25) {
-      const t = ((x % 1600) + 1600) % 1600 / 1600 * Math.PI * 2
-      const yb = base + amp * Math.sin(t * len + phase) + amp * 0.4 * Math.sin(t * (len + 2) + phase * 2)
-      const h = hMin + (hMax - hMin) * (0.5 + 0.5 * Math.sin(t * 3 + phase))
-      pts.push([x, yb, yb - h])
+  // The ribbon's centerline: a cubic curve from the top right, bending left, then right, then down.
+  const B = [[236, -14], [-120, 14], [320, 60], [70, 100]]
+  const at = (s) => { const u = 1 - s; return [0, 1].map((k) => u * u * u * B[0][k] + 3 * u * u * s * B[1][k] + 3 * u * s * s * B[2][k] + s * s * s * B[3][k]) }
+  const pts = []
+  for (let s = 0; s <= 1; s += 0.0015) { const [x, y] = at(s); pts.push([x, y, s]) }
+  const hash = (n) => { const v = Math.sin(n * 127.1 + 311.7) * 43758.5453; return v - Math.floor(v) }
+  // For each column, where the ribbon crosses it.
+  const cross = Array.from({ length: COLS + 40 }, () => [])
+  for (const [x, y, s] of pts) { const c = Math.round(x) + 20; if (c >= 0 && c < cross.length && !cross[c].some(([yy]) => Math.abs(yy - y) < 3)) cross[c].push([y, s]) }
+  const width = (s) => 2.5 + 6 * Math.pow(Math.sin(Math.PI * Math.min(1, s * 1.05)), 0.6)
+  const GREEN = '#86e8a8', MINT = '#dcffe9', TEAL = '#6fd0c4', VIOLET = '#a47ad0'
+  const aurora = layer(), pulse = [0, 1, 2, 3].map(() => layer()), flick = [0, 1, 2].map(() => layer())
+  for (let y = -2; y < HZ; y++) for (let x = -16; x < COLS + 16; x++) {
+    // Distance to the ribbon.
+    let d = 1e9, sNear = 0
+    for (let i = 0; i < pts.length; i += 2) { const dx = pts[i][0] - x, dy = pts[i][1] - y; const dd = dx * dx + dy * dy; if (dd < d) { d = dd; sNear = pts[i][2] } }
+    d = Math.sqrt(d)
+    const w = width(sNear)
+    let a = 0, c = GREEN
+    if (d < w) { const k = d / w; a = k < 0.22 ? 0.95 : k < 0.5 ? 0.78 : 0.55; c = k < 0.22 ? MINT : GREEN }
+    // Curtain rays in two-cell columns: teal hanging below the ribbon, violet rising above it.
+    const col = Math.floor((x + 40) / 2), Ldown = 8 + 24 * hash(col), Lup = 16 + 40 * hash(col + 77)
+    for (const [yr, s] of cross[Math.round(x) + 20] || []) {
+      const fadeEdge = Math.min(1, s * 4, (1 - s) * 6)
+      if (y > yr + 1 && y - yr < Ldown) { const t = 1 - (y - yr) / Ldown, v = 0.62 * t * fadeEdge; if (v > a) { a = v; c = t > 0.55 ? GREEN : TEAL } }
+      if (y < yr - 1 && yr - y < Lup) { const t = 1 - (yr - y) / Lup, v = 0.58 * t * fadeEdge; if (v > a) { a = v; c = VIOLET } }
     }
-    let d = `M${pts[0][0]} ${f(pts[0][1])}` + pts.map(([x, yb]) => `L${x} ${f(yb)}`).join('') + pts.slice().reverse().map(([x, , yt]) => `L${x} ${f(yt)}`).join('') + 'Z'
-    let r = ''
-    if (rays) for (const [x, yb, yt] of pts) { if (((x / 25) | 0) % 2) continue; const k = 0.5 + 0.5 * Math.sin(x * 0.37 + phase); if (k < 0.35) continue; r += `M${x} ${f(yb)}V${f(yt + (yb - yt) * (1 - k) * 0.6)}` }
-    defs.push(`<g id="${id}"><path d="${d}" fill="url(#${id}g)"/>${r ? `<path d="${r}" stroke="url(#${id}r)" stroke-width="9" fill="none"/>` : ''}</g>`)
+    const qa = a < 0.12 ? 0 : q(a)
+    if (!qa) continue
+    aurora.set(x + 16, y, mix(skyAt(y), c, qa))
+    // Light pulsing along the core, and flickering rays.
+    if (d < w * 0.5) pulse[Math.floor(sNear * 12) % 4].set(x + 16, y, mix(skyAt(y), MINT, 0.97))
+    if (d >= w && qa >= 0.32 && hash(col * 3.1) < 0.4) flick[Math.floor(hash(col + 9) * 3)].set(x + 16, y, mix(skyAt(y), c, Math.min(0.9, qa + 0.22)))
   }
-  curtain('c1', 470, 50, 2, 150, 300, 0.3, 'green', true)
-  curtain('c2', 340, 40, 3, 110, 230, 2.1, 'violet', false)
-  curtain('c3', 540, 30, 1, 80, 180, 4.0, 'green', true)
-  const aurora = `<g style="animation:drift 160s steps(1600,end) infinite"><use href="#c1"/></g>` +
-    `<g style="animation:drift2 200s steps(2000,end) -60s infinite"><use href="#c2"/></g>` +
-    `<g style="animation:drift 120s steps(1200,end) -30s infinite;opacity:.8"><use href="#c3"/></g>`
 
-  let body = `<rect width="${W}" height="${WL}" fill="url(#sky)"/>`
-  let stars = ''
-  for (let i = 0; i < 120; i++) stars += `<circle cx="${f(rnd() * W)}" cy="${f(rnd() * 560)}" r="${f(0.6 + rnd() * 1.2)}"/>`
-  body += `<g fill="${NORD[6]}" fill-opacity=".7">${stars}</g>`
-  body += [0, 1].map((k) => `<g fill="#ffffff" style="animation:f2 2.4s steps(1,end) -${f(k * 1.2)}s infinite">` + Array.from({ length: 9 }, (_, i) => `<circle cx="${(i * 181 + k * 97) % W}" cy="${(i * 67 + k * 41) % 520}" r="1.7"/>`).join('') + `</g>`).join('')
-  body += `<g style="animation:shoot 9s steps(1,end) -2s infinite"><path d="M1180 90L1300 150" stroke="${NORD[6]}" stroke-width="2.5" stroke-linecap="round"/><path d="M1150 75L1300 150" stroke="${NORD[8]}" stroke-width="6" stroke-opacity=".25" stroke-linecap="round"/></g>`
-  body += aurora
+  // Snowy mountains: jagged peaks, lit on the left faces, snow on the upper slopes.
+  const range = (peaks, base, dark, lit, snowD, snowL, snowFrac) => {
+    for (let i = 0; i < peaks.length - 1; i++) {
+      const [x0, y0] = peaks[i], [x1, y1] = peaks[i + 1]
+      for (let x = x0; x < x1; x++) {
+        const t = (x - x0) / (x1 - x0), top = Math.round(y0 + (y1 - y0) * t), rising = y1 < y0
+        const peakY = Math.min(y0, y1), snowLine = peakY + (base - peakY) * snowFrac + ((x * 7) % 5) - 2
+        for (let y = top; y < base; y++) front.set(x, y, y < snowLine ? (rising ? snowD : snowL) : rising ? dark : lit)
+      }
+    }
+  }
+  range([[-4, 98], [10, 86], [22, 94], [36, 78], [50, 92], [62, 84], [76, 96], [90, 82], [104, 94], [118, 80], [132, 92], [146, 76], [160, 90], [172, 82], [186, 94], [204, 84]], 112, '#3f4877', '#55619a', '#a3aed8', '#dde4f8', 0.32)
+  range([[-4, 104], [12, 92], [28, 106], [44, 98], [60, 116], [140, 116], [154, 96], [168, 104], [184, 90], [204, 100]], 116, '#2f365c', '#444e80', '#b4bee6', '#e8eeff', 0.3)
+  // A frozen lake and the dark shore, with the aurora's glow in the ice.
+  front.rect(0, 112, COLS, ROWS - 112, '#1a1f34')
+  for (let x = 0; x < COLS; x++) { const y = 112 + Math.round(Math.sin(x / 13) * 1.2); front.rect(x, y, 1, 3, '#24304e') }
+  for (let y = 114; y < 121; y++) for (let x = 40 + (y % 2); x < 164; x += 2) front.set(x, y, '#222c4a')
+  const ice = [0, 1].map((k) => { const g = layer(); for (let i = 0; i < 26; i++) { const x = 70 + ((i * 37 + k * 11) % 80), y = 114 + ((i * 7 + k * 3) % 7), w = 2 + (i % 3) * 2; g.rect(x, y, w, 1, mix('#222c4a', i % 3 ? GREEN : TEAL, 0.35 + (i % 2) * 0.15)) } return g })
+  for (const [x, h] of [[8, 9], [13, 12], [18, 8], [176, 10], [182, 14], [188, 9], [194, 12]]) for (let i = 0; i < h; i++) { const w = Math.floor(i * 0.4); front.rect(x - w, 112 - h + i, w * 2 + 1, 1, '#141828') }
 
-  // Mountains: a far range and near peaks framing the fjord, with snow.
-  const ridge = (pts) => `M${pts.map(([x, y]) => `${x} ${y}`).join('L')}`
-  const farR = [[0, 560], [120, 470], [210, 520], [330, 430], [430, 500], [520, 470], [610, 560], [700, 600], [900, 610], [1000, 560], [1090, 470], [1180, 520], [1290, 420], [1400, 500], [1500, 450], [1600, 520]]
-  const nearL = [[0, 420], [90, 380], [180, 460], [260, 400], [380, 560], [470, 640], [560, WL]], nearR = [[1040, WL], [1130, 620], [1230, 520], [1330, 400], [1420, 470], [1510, 360], [1600, 430]]
-  const range = (pts, close, fill) => `<path d="${ridge(pts)}${close}Z" fill="${fill}"/>`
-  const snow = (pts, c) => pts.slice(1, -1).map(([x, y], i) => { const [px0, py0] = pts[i], [px1, py1] = pts[i + 2]; if (y > py0 || y > py1) return ''; const k = 0.28; return `<path d="M${f(x + (px0 - x) * k)} ${f(y + (py0 - y) * k)}L${x} ${y}L${f(x + (px1 - x) * k)} ${f(y + (py1 - y) * k)}L${f(x + (px1 - x) * k * 0.4)} ${f(y + (py1 - y) * k * 0.7)}L${f(x + (px0 - x) * k * 0.5)} ${f(y + (py0 - y) * k * 0.8)}Z" fill="${c}"/>` }).join('')
-  let land = range(farR, `L1600 ${WL}L0 ${WL}`, NORD[2]) + snow(farR, NORD[4])
-  land += range(nearL, `L0 ${WL}`, NORD[1]) + snow(nearL, NORD[5]) + range(nearR, `L1600 ${WL}`, NORD[1]) + snow(nearR, NORD[5])
-  body += land
-
-  // Water with everything mirrored, then ripples.
-  body += `<rect y="${WL}" width="${W}" height="${H - WL}" fill="url(#water)"/>`
-  body += `<g clip-path="url(#below)" opacity=".38"><g transform="translate(0 ${2 * WL}) scale(1 -1)">${aurora}${land}</g></g>`
-  body += [0, 1].map((k) => `<g fill="${NORD[4]}" fill-opacity=".1" style="animation:f2 1.6s steps(1,end) -${f(k * 0.8)}s infinite">` + Array.from({ length: 40 }, (_, i) => `<rect x="${(i * 157 + k * 53) % W}" y="${WL + 10 + ((i * 41 + k * 17) % 260)}" width="${30 + (i % 5) * 18}" height="2"/>`).join('') + `</g>`).join('')
-
-  // Shore with snow, pines, a red cabin with a glowing window, and chimney smoke.
-  body += `<path d="M960 ${WL + 30}Q1180 ${WL - 10} 1600 ${WL - 20}V${H}H900Z" fill="${NORD[0]}"/><path d="M960 ${WL + 30}Q1180 ${WL - 10} 1600 ${WL - 20}V${WL - 6}Q1180 ${WL + 4} 990 ${WL + 36}Z" fill="${NORD[4]}"/>`
-  const pine = (x, y, h) => `<path d="M${x} ${y - h}L${f(x - h * 0.28)} ${y}H${f(x + h * 0.28)}Z" fill="#232831"/><path d="M${x} ${y - h}L${f(x - h * 0.12)} ${f(y - h * 0.55)}H${f(x + h * 0.08)}Z" fill="${NORD[5]}" fill-opacity=".8"/>`
-  body += [[1040, WL + 26, 70], [1080, WL + 20, 96], [1460, WL - 6, 120], [1510, WL - 10, 90], [1560, WL - 12, 140], [1000, WL + 32, 54]].map(([x, y, h]) => pine(x, y, h)).join('')
-  const CX = 1260, CY = WL - 2
-  body += `<rect x="${CX}" y="${CY - 70}" width="120" height="70" fill="${NORD[11]}"/><path d="M${CX - 14} ${CY - 68}L${CX + 60} ${CY - 118}L${CX + 134} ${CY - 68}Z" fill="#3a2a30"/><path d="M${CX - 16} ${CY - 66}L${CX + 60} ${CY - 120}L${CX + 136} ${CY - 66}L${CX + 126} ${CY - 64}L${CX + 60} ${CY - 108}L${CX - 6} ${CY - 64}Z" fill="${NORD[6]}"/>`
-  body += `<rect x="${CX + 92}" y="${CY - 128}" width="16" height="36" fill="#3a2a30"/><rect x="${CX + 90}" y="${CY - 132}" width="20" height="6" fill="${NORD[6]}"/>`
-  body += `<circle cx="${CX + 38}" cy="${CY - 38}" r="90" fill="url(#win)"/><rect x="${CX + 24}" y="${CY - 50}" width="28" height="24" fill="${NORD[13]}"/><path d="M${CX + 38} ${CY - 50}V${CY - 26}M${CX + 24} ${CY - 38}H${CX + 52}" stroke="#3a2a30" stroke-width="3"/>`
-  body += `<rect x="${CX + 76}" y="${CY - 46}" width="22" height="46" fill="#5a3a3a"/><circle cx="${CX + 93}" cy="${CY - 22}" r="2" fill="${NORD[13]}"/>`
-  body += `<rect x="${CX + 30}" y="${WL + 8}" width="16" height="40" fill="${NORD[13]}" fill-opacity=".14"/>`
-  body += [0, 1, 2].map((k) => `<g fill="${NORD[4]}" fill-opacity=".35" style="animation:f3 2.4s steps(1,end) -${f(k * 0.8)}s infinite">` + [0, 1, 2].map((i) => `<circle cx="${CX + 100 + (i + k) % 2 * 8 + i * 6}" cy="${CY - 146 - i * 26 - k * 8}" r="${9 + i * 4}"/>`).join('') + `</g>`).join('')
-
-  const css =
-    `@keyframes f2{0%{opacity:1}50%{opacity:0}}@keyframes f3{0%{opacity:1}33.333%{opacity:0}}` +
-    `@keyframes drift{0%{transform:translate(0,0)}100%{transform:translate(-1600px,0)}}@keyframes drift2{0%{transform:translate(-1600px,0)}100%{transform:translate(0,0)}}` +
-    `@keyframes shoot{0%{opacity:0}96.666%{opacity:1}}`
-  return svgDoc({ defs: defs.join(''), css, body })
+  return svgDoc({
+    css:
+      `@keyframes f2{0%{opacity:1}50%{opacity:0}}@keyframes f3{0%{opacity:1}33.333%{opacity:0}}@keyframes f4{0%{opacity:1}25%{opacity:0}}` +
+      `@keyframes sway{0%{transform:translate(-128px,0)}50%{transform:translate(-96px,0)}100%{transform:translate(-128px,0)}}`,
+    body:
+      sky.svg(P) + frames(twinkle, 2.4) +
+      `<g style="animation:sway 16s steps(16,end) infinite">${aurora.svg(P)}${frames(flick, 1.2)}${frames(pulse, 1.6)}</g>` +
+      front.svg(P) + frames(ice, 1.6),
+  })
 }

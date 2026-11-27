@@ -3,10 +3,10 @@ import type { EngineInterface, Register, ThemeSetArgs } from 'claude-code'
 import { makeColors } from './make-colors.js'
 import { SCENE } from './scene.js'
 
-const SCENE_NAME = 'tokyo-night-rooftop'
+const SCENE_NAME = 'tokyo-night'
 
 const { theme, problems } = makeColors({
-  label: 'Tokyo Night Rooftop',
+  label: 'Tokyo Night',
   only: 'dark',
   roles: { accent: '#7aa2f7', danger: '#f7768e', success: '#9ece6a', warning: '#e0af68', pro: '#bb9af7' },
   dark: {
@@ -71,6 +71,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="Pixel-art rainy rooftop at night in Tokyo Night colors with a hooded coder at a laptop under an awning, a vending machine, a water tank, neon signs, and an orange lattice tower" />
+    return <Svg source={SCENE} alt="Pixel-art Tokyo street at night with cherry blossoms, red paper lanterns, neon signs, Tokyo Tower, and snowcapped Mt. Fuji under a full moon" />
   })
 }
