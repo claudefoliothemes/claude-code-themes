@@ -485,6 +485,8 @@ export const THEMES = [
   {
     name: 'tokyo-night',
     label: 'Tokyo Night',
+    // 0.1.1: redrawn at 16-bit detail on a 320 x 200 grid.
+    version: '0.1.1',
     description: "A Tokyo street at night in Tokyo Night colors: cherry blossoms drift down, paper lanterns sway, neon signs flicker, Tokyo Tower glows in orange and white, and Mt. Fuji stands snowcapped under a full moon.",
     alt: "Pixel-art Tokyo street at night with cherry blossoms, red paper lanterns, neon signs, Tokyo Tower, and snowcapped Mt. Fuji under a full moon",
     tint: '#1a1b26',
@@ -515,9 +517,9 @@ export const THEMES = [
   {
     name: 'northern-lights',
     label: 'Northern Lights',
-    // 0.1.1: redrawn in pixel art, a sweeping S-curve aurora with curtain rays over snowy peaks.
-    version: '0.1.1',
-    description: "Pixel-art northern lights in Nord colors: a glowing green aurora sweeps across the stars in an S-curve, with teal and violet curtains of light rippling over snowy peaks and a frozen lake.",
+    // 0.1.1: pixel art S-curve aurora. 0.1.2: redrawn at 16-bit detail on a 320 x 200 grid.
+    version: '0.1.2',
+    description: "16-bit pixel-art northern lights in Nord colors: a glowing green aurora sweeps across the stars in an S-curve, with teal and violet curtains of light over snowy peaks, a pine forest, and a frozen lake.",
     alt: "Pixel-art green aurora ribbon in an S-curve with violet curtain rays over a starry blue sky, snowy mountains, and a frozen lake",
     tint: '#2b303b',
     opacity: 0.45,

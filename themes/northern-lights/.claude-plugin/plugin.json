@@ -1,7 +1,7 @@
 {
   "name": "northern-lights",
-  "version": "0.1.1",
-  "description": "Pixel-art northern lights in Nord colors: a glowing green aurora sweeps across the stars in an S-curve, with teal and violet curtains of light rippling over snowy peaks and a frozen lake.",
+  "version": "0.1.2",
+  "description": "16-bit pixel-art northern lights in Nord colors: a glowing green aurora sweeps across the stars in an S-curve, with teal and violet curtains of light over snowy peaks, a pine forest, and a frozen lake.",
   "author": {
     "name": "ClaudeFolio",
     "url": "https://claudefolio.com"

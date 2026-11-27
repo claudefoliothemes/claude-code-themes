@@ -29,7 +29,7 @@ Sixty-one themes for the Claude Code desktop app. Fifty-six paint the app dark a
 | ![Doxie Park](previews/doxie-park.gif)<br>**Doxie Park**: a pixel dog park full of dachshunds of every coat and size, plus puppies | ![Cat Café Mocha](previews/cat-cafe-mocha.gif)<br>**Cat Café Mocha**: a cozy pixel cat café at night in [Catppuccin](https://github.com/catppuccin/catppuccin) Mocha colors |
 | ![Cat Café Latte](previews/cat-cafe-latte.gif)<br>**Cat Café Latte**: a light theme, the cat café by day in [Catppuccin](https://github.com/catppuccin/catppuccin) Latte colors | ![Tokyo Night](previews/tokyo-night.gif)<br>**Tokyo Night**: Tokyo Tower, Mt. Fuji, cherry blossoms, and neon in [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) colors |
 | ![Fish Tank](previews/fish-tank.gif)<br>**Fish Tank**: a retro pixel aquarium with fish, jellyfish, a castle, and a treasure chest | ![Midnight Fireworks](previews/midnight-fireworks.gif)<br>**Midnight Fireworks**: New Year's Eve fireworks over a city and its river |
-| ![Northern Lights](previews/northern-lights.gif)<br>**Northern Lights**: a pixel aurora sweeping over snowy peaks in [Nord](https://github.com/nordtheme/nord) colors | |
+| ![Northern Lights](previews/northern-lights.gif)<br>**Northern Lights**: a 16-bit pixel aurora sweeping over snowy peaks in [Nord](https://github.com/nordtheme/nord) colors | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -103,10 +103,10 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Doxie Park | 0.24 |
 | Cat Café Mocha | 0.22 |
 | Cat Café Latte | 0.22 |
-| Tokyo Night | 0.25 |
+| Tokyo Night | 0.21 |
 | Fish Tank | 0.21 |
 | Midnight Fireworks | 0.2 |
-| Northern Lights | 0.17 |
+| Northern Lights | 0.2 |
 | Summer Dusk | 0.23 |
 | Summit Sunrise | 0.23 |
 | Beach Bungalow | 0.23 |
