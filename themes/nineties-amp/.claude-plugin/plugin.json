@@ -1,0 +1,15 @@
+{
+  "name": "nineties-amp",
+  "version": "0.1.0",
+  "description": "A classic stacked desktop music player skin: a green LCD clock counting up, a bouncing spectrum analyzer, an equalizer with moving sliders, and a playlist of made-up coder songs.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

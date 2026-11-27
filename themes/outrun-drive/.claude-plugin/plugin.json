@@ -1,0 +1,15 @@
+{
+  "name": "outrun-drive",
+  "version": "0.1.0",
+  "description": "A synthwave night drive: a low sports car speeds down a neon-edged highway toward a city skyline and a setting sun, with palms flicking past and VHS scanlines over it all.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "snow-day",
+  "version": "0.1.0",
+  "description": "A cute pixel-art snow day at dusk: a bunny hops beside a snowman, a fox sleds down the hill, a bear cub tosses a snowball, and string lights twinkle on a cozy cabin while snow falls.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

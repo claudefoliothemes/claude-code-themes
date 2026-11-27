@@ -375,6 +375,38 @@
       }
     },
     {
+      "name": "level-up",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/level-up-0.1.0.zip",
+        "sha256": "28f71eea0dc01096821da2e45bed5f1df7c40d560075ae0feec2ad44b8933c17"
+      }
+    },
+    {
+      "name": "outrun-drive",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/outrun-drive-0.1.0.zip",
+        "sha256": "13365decc1ec52c65d0edc7dad606ae8b059f56193f3a75312f0a924e11df36a"
+      }
+    },
+    {
+      "name": "snow-day",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/snow-day-0.1.0.zip",
+        "sha256": "239214ebbe1c5ac1541957f0ce2cbb2af3a57c26b1132e2543d93fa3428aca1c"
+      }
+    },
+    {
+      "name": "nineties-amp",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/nineties-amp-0.1.0.zip",
+        "sha256": "390f96f038e50043cbe7b46bd08ad16ac1ae83d0c92317ae0b2aa8573b6453c5"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",
