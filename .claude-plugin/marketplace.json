@@ -415,6 +415,22 @@
       }
     },
     {
+      "name": "cat-cafe-mocha",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/cat-cafe-mocha-0.1.0.zip",
+        "sha256": "9f7387ccb6bcfd6babbdb451f969cd5e8316ef19f8ee46111c4e5bb8808cc2f6"
+      }
+    },
+    {
+      "name": "cat-cafe-latte",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/cat-cafe-latte-0.1.0.zip",
+        "sha256": "ca887a0bfa04f6496e6fef05503f668f176425b34d30fb5f96b3ad1e4ed6747c"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

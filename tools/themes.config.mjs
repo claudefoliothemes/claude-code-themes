@@ -473,6 +473,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#1c1830', 'surface-1': '#211c38', 'surface-2': '#272140', 'surface-3': '#2c2648', 'text-primary': '#f8f0f4', 'text-secondary': '#dcd0dc', 'text-muted': '#a89cae' },
   },
   {
+    name: 'cat-cafe-mocha',
+    label: 'Cat Café Mocha',
+    description: 'A cozy pixel-art cat café at night in Catppuccin Mocha colors: a cat on the sill watches the moon, a kitten naps in a mug, another bats a ball of yarn, and the shelf cats blink under pendant lamps.',
+    alt: 'Pixel-art cat café at night in pastel Catppuccin Mocha colors with an arched window, a crescent moon, cats on shelves and a cat tree, a kitten in a mug, and a kitten with yarn on a rug',
+    tint: '#1e1e2e',
+    opacity: 0.5,
+    roles: { accent: '#cba6f7', danger: '#f38ba8', success: '#a6e3a1', warning: '#f9e2af', pro: '#b4befe' },
+    anchors: { 'surface-0': '#1e1e2e', 'surface-1': '#252536', 'surface-2': '#2b2c3e', 'surface-3': '#313244', 'text-primary': '#cdd6f4', 'text-secondary': '#bac2de', 'text-muted': '#a6adc8' },
+  },
+  {
     name: 'machine-rising',
     label: 'Machine Rising',
     description: 'A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.',
@@ -553,6 +563,18 @@ export const THEMES = [
     opacity: 0.6,
     roles: { accent: '#c8487a', danger: '#c53030', success: '#2f855a', warning: '#b7791f', pro: '#6b46c1' },
     anchors: { 'surface-0': '#efe6ea', 'surface-1': '#f7f1f3', 'surface-2': '#fcf9fa', 'text-primary': '#2a2228', 'text-secondary': '#4d4248', 'text-muted': '#665a62' },
+  },
+  {
+    // A light theme with a moving scene: needs the app in light mode.
+    name: 'cat-cafe-latte',
+    label: 'Cat Café Latte',
+    mode: 'light',
+    description: 'A light theme: a cozy pixel-art cat café by day in Catppuccin Latte colors, with clouds drifting past the window, a kitten napping in a mug, another batting yarn, and cats blinking on the shelves.',
+    alt: 'Pixel-art cat café by day in Catppuccin Latte colors with an arched window and clouds, cats on shelves and a cat tree, a kitten in a mug, and a kitten with yarn on a rug',
+    tint: '#eff1f5',
+    opacity: 0.6,
+    roles: { accent: '#8839ef', danger: '#d20f39', success: '#40a02b', warning: '#df8e1d', pro: '#7287fd' },
+    anchors: { 'surface-0': '#e6e9ef', 'surface-1': '#eff1f5', 'surface-2': '#f7f8fa', 'text-primary': '#4c4f69', 'text-secondary': '#5c5f77', 'text-muted': '#6c6f85' },
   },
   {
     // A light theme with a moving scene: needs the app in light mode.

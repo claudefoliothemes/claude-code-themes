@@ -1,0 +1,15 @@
+{
+  "name": "cat-cafe-mocha",
+  "version": "0.1.0",
+  "description": "A cozy pixel-art cat café at night in Catppuccin Mocha colors: a cat on the sill watches the moon, a kitten naps in a mug, another bats a ball of yarn, and the shelf cats blink under pendant lamps.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

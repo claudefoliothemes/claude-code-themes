@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Fifty-five themes for the Claude Code desktop app. Fifty-one paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Three are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Fifty-seven themes for the Claude Code desktop app. Fifty-two paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Four are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, Cat Café Latte, a cat café by day, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -26,7 +26,8 @@ Fifty-five themes for the Claude Code desktop app. Fifty-one paint the app dark 
 | ![Machine Rising](previews/machine-rising.gif)<br>**Machine Rising**: a chrome robot endoskeleton with a red eye over a burning future city | ![Inevitable](previews/inevitable.gif)<br>**Inevitable**: a rogue AI terminal in dark red, typing ominous lines one by one |
 | ![Level Up](previews/level-up.gif)<br>**Level Up**: a pixel game level with a quest log of motivation and an XP bar | ![Outrun Drive](previews/outrun-drive.gif)<br>**Outrun Drive**: a synthwave night drive toward a neon skyline and a setting sun |
 | ![Snow Day](previews/snow-day.gif)<br>**Snow Day**: cute pixel critters sledding and building a snowman by a cozy cabin | ![90s Amp](previews/nineties-amp.gif)<br>**90s Amp**: a classic desktop music player skin with a bouncing spectrum and EQ |
-| ![Doxie Park](previews/doxie-park.gif)<br>**Doxie Park**: a pixel dog park full of dachshunds of every coat and size, plus puppies | |
+| ![Doxie Park](previews/doxie-park.gif)<br>**Doxie Park**: a pixel dog park full of dachshunds of every coat and size, plus puppies | ![Cat Café Mocha](previews/cat-cafe-mocha.gif)<br>**Cat Café Mocha**: a cozy pixel cat café at night in [Catppuccin](https://github.com/catppuccin/catppuccin) Mocha colors |
+| ![Cat Café Latte](previews/cat-cafe-latte.gif)<br>**Cat Café Latte**: a light theme, the cat café by day in [Catppuccin](https://github.com/catppuccin/catppuccin) Latte colors | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -43,7 +44,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `vibe-board`, `nineties-room`, `graphite`, `night-train`, `machine-rising`, `inevitable`, `level-up`, `outrun-drive`, `snow-day`, `nineties-amp`, `doxie-park`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `vibe-board`, `nineties-room`, `graphite`, `night-train`, `machine-rising`, `inevitable`, `level-up`, `outrun-drive`, `snow-day`, `nineties-amp`, `doxie-park`, `cat-cafe-mocha`, `cat-cafe-latte`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -59,7 +60,7 @@ claude plugin enable neon-horizon@claudefolio-themes
 
 - The Claude desktop app (Code tab) or the Claude mobile app. The terminal keeps its own look.
 - Claude Code 2.1.324 or later.
-- Dark mode for every theme except Morning Light, Sakura Day, and Clean Slate, which need light mode.
+- Dark mode for every theme except Morning Light, Sakura Day, Cat Café Latte, and Clean Slate, which need light mode.
 - **Windows:** turn on Settings > Personalization > Colors > **Transparency effects**. With it off, the app makes its glass fully opaque and hides the scene, so you see the colors but no backdrop.
 - **macOS:** turn off System Settings > Accessibility > Display > **Reduce transparency**, for the same reason.
 
@@ -98,6 +99,8 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Snow Day | 0.25 |
 | 90s Amp | 0.24 |
 | Doxie Park | 0.24 |
+| Cat Café Mocha | 0.22 |
+| Cat Café Latte | 0.22 |
 | Summer Dusk | 0.23 |
 | Summit Sunrise | 0.23 |
 | Beach Bungalow | 0.23 |

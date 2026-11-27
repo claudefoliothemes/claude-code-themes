@@ -1,0 +1,15 @@
+{
+  "name": "cat-cafe-latte",
+  "version": "0.1.0",
+  "description": "A light theme: a cozy pixel-art cat café by day in Catppuccin Latte colors, with clouds drifting past the window, a kitten napping in a mug, another batting yarn, and cats blinking on the shelves.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
