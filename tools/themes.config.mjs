@@ -463,8 +463,10 @@ export const THEMES = [
   {
     name: 'doxie-park',
     label: 'Doxie Park',
-    description: 'A pixel-art dog park at golden hour full of dachshunds: smooth, long-haired, and wire-haired, in red, cream, black and tan, chocolate, wild boar, and dapple. A pack races by, one chases a ball, two touch noses, and tails wag.',
-    alt: 'Pixel-art park at sunset with dachshunds of different coats and colors running on a path, touching noses under a heart, wagging their tails, and one asleep in a dog bed',
+    // 0.1.1: four sizes (large, standard, mini, puppy), chibi eyes with a sparkle and blush, and four puppies.
+    version: '0.1.1',
+    description: 'A pixel-art dog park at golden hour full of dachshunds of every coat, color, and size, plus puppies: a pack races by, a mom and pup chase a ball, two touch noses, puppies hop beside their sleeping mom, and tails wag.',
+    alt: 'Pixel-art park at sunset with dachshunds and puppies of different coats, colors, and sizes running on a path, touching noses under a heart, hopping, and one asleep in a dog bed',
     tint: '#1c1830',
     opacity: 0.5,
     roles: { accent: '#f0905a', danger: '#ff5a6e', success: '#7ad87a', warning: '#ffd166', pro: '#c8a6ff' },

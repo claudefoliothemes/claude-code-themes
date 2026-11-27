@@ -71,6 +71,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="Pixel-art park at sunset with dachshunds of different coats and colors running on a path, touching noses under a heart, wagging their tails, and one asleep in a dog bed" />
+    return <Svg source={SCENE} alt="Pixel-art park at sunset with dachshunds and puppies of different coats, colors, and sizes running on a path, touching noses under a heart, hopping, and one asleep in a dog bed" />
   })
 }
