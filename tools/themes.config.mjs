@@ -461,6 +461,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#0c0e16', 'surface-1': '#11131c', 'surface-2': '#161922', 'surface-3': '#1b1e28', 'text-primary': '#eef2f6', 'text-secondary': '#cdd3dc', 'text-muted': '#99a1ae' },
   },
   {
+    name: 'doxie-park',
+    label: 'Doxie Park',
+    description: 'A pixel-art dog park at golden hour full of dachshunds: smooth, long-haired, and wire-haired, in red, cream, black and tan, chocolate, wild boar, and dapple. A pack races by, one chases a ball, two touch noses, and tails wag.',
+    alt: 'Pixel-art park at sunset with dachshunds of different coats and colors running on a path, touching noses under a heart, wagging their tails, and one asleep in a dog bed',
+    tint: '#1c1830',
+    opacity: 0.5,
+    roles: { accent: '#f0905a', danger: '#ff5a6e', success: '#7ad87a', warning: '#ffd166', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#1c1830', 'surface-1': '#211c38', 'surface-2': '#272140', 'surface-3': '#2c2648', 'text-primary': '#f8f0f4', 'text-secondary': '#dcd0dc', 'text-muted': '#a89cae' },
+  },
+  {
     name: 'machine-rising',
     label: 'Machine Rising',
     description: 'A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.',

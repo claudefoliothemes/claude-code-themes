@@ -1,0 +1,15 @@
+{
+  "name": "doxie-park",
+  "version": "0.1.0",
+  "description": "A pixel-art dog park at golden hour full of dachshunds: smooth, long-haired, and wire-haired, in red, cream, black and tan, chocolate, wild boar, and dapple. A pack races by, one chases a ball, two touch noses, and tails wag.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
