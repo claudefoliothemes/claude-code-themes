@@ -495,6 +495,14 @@
       }
     },
     {
+      "name": "nyc-skyline",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/nyc-skyline-0.1.0.zip",
+        "sha256": "59172a4debf0473e16b9828cdc68bba6d0e1221a0227b1a46ddf9cf433a9a2e3"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

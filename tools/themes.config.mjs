@@ -559,6 +559,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#12132a', 'surface-1': '#171831', 'surface-2': '#1c1d38', 'surface-3': '#21223f', 'text-primary': '#f6f0ea', 'text-secondary': '#d8d0d4', 'text-muted': '#a09aae' },
   },
   {
+    name: 'nyc-skyline',
+    label: 'NYC Skyline',
+    description: "The New York skyline at dusk, 16-bit style: the Statue of Liberty with her torch flickering, One World Trade, the Empire State Building cycling red, white, and blue, the Chrysler crown, and the Billionaires' Row towers, with a ferry crossing the harbor.",
+    alt: 'Pixel-art New York skyline at dusk with the Statue of Liberty, One World Trade, the Empire State Building, the Chrysler Building, slender Billionaires Row towers, and an orange ferry on the water',
+    tint: '#12142c',
+    opacity: 0.5,
+    roles: { accent: '#ffb060', danger: '#ff5a5a', success: '#7ad8b0', warning: '#ffd166', pro: '#7ab0ff' },
+    anchors: { 'surface-0': '#12142c', 'surface-1': '#171a34', 'surface-2': '#1c1f3c', 'surface-3': '#212544', 'text-primary': '#f4f2fb', 'text-secondary': '#d4d0e4', 'text-muted': '#9e9ab8' },
+  },
+  {
     name: 'machine-rising',
     label: 'Machine Rising',
     description: 'A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.',

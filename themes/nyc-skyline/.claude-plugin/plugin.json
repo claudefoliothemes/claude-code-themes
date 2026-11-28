@@ -1,0 +1,15 @@
+{
+  "name": "nyc-skyline",
+  "version": "0.1.0",
+  "description": "The New York skyline at dusk, 16-bit style: the Statue of Liberty with her torch flickering, One World Trade, the Empire State Building cycling red, white, and blue, the Chrysler crown, and the Billionaires' Row towers, with a ferry crossing the harbor.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}
