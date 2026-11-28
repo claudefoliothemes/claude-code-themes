@@ -549,6 +549,16 @@ export const THEMES = [
     anchors: { 'surface-0': '#2a1c26', 'surface-1': '#30212c', 'surface-2': '#362632', 'surface-3': '#3c2b38', 'text-primary': '#fbeef0', 'text-secondary': '#e0ccd4', 'text-muted': '#ab96a2' },
   },
   {
+    name: 'midnight-ramen',
+    label: 'Midnight Ramen',
+    description: 'A ramen stall on a rainy back street at midnight, 16-bit style: the chef shakes noodles behind a red curtain, two customers slurp at the counter, steam rises, a lantern sways, and warm light shimmers on the wet road.',
+    alt: 'Pixel-art ramen stall at night in the rain with a red curtain, a chef, two customers on stools, a red paper lantern, a cat, a pink karaoke sign, and a glowing vending machine',
+    tint: '#12132a',
+    opacity: 0.5,
+    roles: { accent: '#ff9a4a', danger: '#ff5a5a', success: '#7ad08a', warning: '#ffc86a', pro: '#ff7ab8' },
+    anchors: { 'surface-0': '#12132a', 'surface-1': '#171831', 'surface-2': '#1c1d38', 'surface-3': '#21223f', 'text-primary': '#f6f0ea', 'text-secondary': '#d8d0d4', 'text-muted': '#a09aae' },
+  },
+  {
     name: 'machine-rising',
     label: 'Machine Rising',
     description: 'A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.',

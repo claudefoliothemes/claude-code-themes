@@ -1,0 +1,15 @@
+{
+  "name": "midnight-ramen",
+  "version": "0.1.0",
+  "description": "A ramen stall on a rainy back street at midnight, 16-bit style: the chef shakes noodles behind a red curtain, two customers slurp at the counter, steam rises, a lantern sways, and warm light shimmers on the wet road.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

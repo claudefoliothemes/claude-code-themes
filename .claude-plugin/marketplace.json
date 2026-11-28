@@ -487,6 +487,14 @@
       }
     },
     {
+      "name": "midnight-ramen",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/midnight-ramen-0.1.0.zip",
+        "sha256": "b573136d12879e581bb5081e1d40667f797ae6d9c3c77338814dbb46037a583b"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",

@@ -1,6 +1,6 @@
 # Claude Code themes from ClaudeFolio
 
-Sixty-four themes for the Claude Code desktop app. Fifty-eight paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Five are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, Cat Café Latte, a cat café by day, Sky Islands, floating islands in a bright sky, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
+Sixty-five themes for the Claude Code desktop app. Fifty-nine paint the app dark and play a moving scene behind your conversation. OLED Black is true black with nothing moving, made for OLED screens. Five are light: Morning Light, a sunlit room that moves, Sakura Day, a spring garden in bloom, Cat Café Latte, a cat café by day, Sky Islands, floating islands in a bright sky, and Clean Slate, a calm theme where nothing moves. They are built to stay light, so the app's CPU use stays close to idle. Designed by ClaudeFolio together with Claude.
 
 | | |
 |---|---|
@@ -31,6 +31,7 @@ Sixty-four themes for the Claude Code desktop app. Fifty-eight paint the app dar
 | ![Fish Tank](previews/fish-tank.gif)<br>**Fish Tank**: a retro pixel aquarium with fish, jellyfish, a castle, and a treasure chest | ![Midnight Fireworks](previews/midnight-fireworks.gif)<br>**Midnight Fireworks**: New Year's Eve fireworks over a city and its river |
 | ![Northern Lights](previews/northern-lights.gif)<br>**Northern Lights**: a 16-bit pixel aurora sweeping over snowy peaks in [Nord](https://github.com/nordtheme/nord) colors | ![Sky Islands](previews/sky-islands.gif)<br>**Sky Islands**: a light theme, floating islands with a windmill, waterfalls, and an airship |
 | ![Snowy Bookshop](previews/snowy-bookshop.gif)<br>**Snowy Bookshop**: a cozy bookshop on a snowy night with a sleeping cat and a wood stove | ![After School](previews/after-school.gif)<br>**After School**: an anime classroom at sunset with petals blowing in |
+| ![Midnight Ramen](previews/midnight-ramen.gif)<br>**Midnight Ramen**: a ramen stall on a rainy night, steam rising and neon on the wet road | |
 | ![Summer Dusk](previews/summer-dusk.gif)<br>**Summer Dusk**: an anime-style evening sky, power lines and a little train | ![Good Vibes](previews/good-vibes.gif)<br>**Good Vibes**: a new line of encouragement every hour, on your clock |
 | ![Ink Wave](previews/ink-wave.gif)<br>**Ink Wave**: woodblock-print waves rolling past a red sun | ![Fireside](previews/fireside.gif)<br>**Fireside**: a crackling hearth, snow at the window, and a sleeping cat |
 | ![Rooftop Santa](previews/rooftop-santa.gif)<br>**Rooftop Santa**: Santa waving from a snowy rooftop beside the chimney | ![Sleigh Ride](previews/sleigh-ride.gif)<br>**Sleigh Ride**: reindeer pull the sleigh across the moon, the lead one's red nose glowing |
@@ -47,7 +48,7 @@ In Claude Code, run:
 /plugin install digital-rain --marketplace claudefoliothemes/claude-code-themes
 ```
 
-Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `vibe-board`, `nineties-room`, `graphite`, `night-train`, `machine-rising`, `inevitable`, `level-up`, `outrun-drive`, `snow-day`, `nineties-amp`, `doxie-park`, `cat-cafe-mocha`, `cat-cafe-latte`, `tokyo-night`, `fish-tank`, `midnight-fireworks`, `northern-lights`, `sky-islands`, `snowy-bookshop`, `after-school`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
+Swap `digital-rain` for any theme: `sky-clock`, `good-vibes`, `braille-stars`, `neon-horizon`, `firefly-night`, `amber-terminal`, `night-sakura`, `holiday-lights`, `rooftop-santa`, `sleigh-ride`, `cyber-city`, `neon-coast`, `autumn-maple`, `summer-dusk`, `lofi-rain`, `lantern-alley`, `tokyo-crossing`, `pastel-nebula`, `ink-wave`, `fireside`, `pixel-camp`, `pixel-den`, `pixel-arcade`, `pixel-shrine`, `pixel-village`, `pixel-pets`, `slime-meadow`, `pixel-cafe`, `pixel-cosmos`, `christmas-eve`, `summit-sunrise`, `window-clock`, `low-orbit`, `starlit-cabin`, `penguin-cove`, `beach-bungalow`, `neon-district`, `snow-globe`, `harvest-home`, `vibe-board`, `nineties-room`, `graphite`, `night-train`, `machine-rising`, `inevitable`, `level-up`, `outrun-drive`, `snow-day`, `nineties-amp`, `doxie-park`, `cat-cafe-mocha`, `cat-cafe-latte`, `tokyo-night`, `fish-tank`, `midnight-fireworks`, `northern-lights`, `sky-islands`, `snowy-bookshop`, `after-school`, `midnight-ramen`, `morning-light`, `sakura-day`, `oled-black`, or `clean-slate`. Answer `y` to add the marketplace, then pick the user scope so the theme follows you into every session.
 
 Run one theme at a time. Every theme sets the whole look, so whichever loads last wins. To switch, turn one off and another on:
 
@@ -111,6 +112,7 @@ Measured in headless Chrome at 1920x1080, averaged over 12 seconds. An empty pag
 | Sky Islands | 0.2 |
 | Snowy Bookshop | 0.25 |
 | After School | 0.2 |
+| Midnight Ramen | 0.2 |
 | Summer Dusk | 0.23 |
 | Summit Sunrise | 0.23 |
 | Beach Bungalow | 0.23 |
