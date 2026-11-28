@@ -1,0 +1,15 @@
+{
+  "name": "after-school",
+  "version": "0.1.0",
+  "description": "An empty classroom at sunset, anime style: curtains billow, golden light falls across the desks, cherry petals drift in, and a student stands at the window looking out while the clock ticks.",
+  "author": {
+    "name": "ClaudeFolio",
+    "url": "https://claudefolio.com"
+  },
+  "homepage": "https://claudefolio.com/themes",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "backdrop"
+  ]
+}

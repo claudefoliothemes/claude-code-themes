@@ -527,6 +527,26 @@ export const THEMES = [
     anchors: { 'surface-0': '#2b303b', 'surface-1': '#2e3440', 'surface-2': '#313743', 'surface-3': '#343a46', 'text-primary': '#eceff4', 'text-secondary': '#d8dee9', 'text-muted': '#aab2c0' },
   },
   {
+    name: 'snowy-bookshop',
+    label: 'Snowy Bookshop',
+    description: "A cozy little bookshop on a snowy night, 16-bit style: snow falls past the big window, a cat sleeps on a red armchair, cocoa steams, a small tree twinkles, and the wood stove flickers.",
+    alt: "Pixel-art bookshop at night with tall bookshelves, a rolling ladder, a window onto snowy rooftops, a cat asleep on a red armchair, a small decorated tree, and a wood stove",
+    tint: '#1e1614',
+    opacity: 0.5,
+    roles: { accent: '#e8a45a', danger: '#e85a5a', success: '#7ac08a', warning: '#e8c05a', pro: '#b8a0e0' },
+    anchors: { 'surface-0': '#1e1614', 'surface-1': '#241a18', 'surface-2': '#2a201d', 'surface-3': '#302522', 'text-primary': '#f4ece4', 'text-secondary': '#dccfc4', 'text-muted': '#a8998c' },
+  },
+  {
+    name: 'after-school',
+    label: 'After School',
+    description: "An empty classroom at sunset, anime style: curtains billow, golden light falls across the desks, cherry petals drift in, and a student stands at the window looking out while the clock ticks.",
+    alt: "Pixel-art anime classroom at sunset with tall windows, a cherry tree outside, desks in golden light, a chalkboard with doodles, and a student at the window",
+    tint: '#2a1c26',
+    opacity: 0.5,
+    roles: { accent: '#ff9a7a', danger: '#ff5a6e', success: '#7ad0a0', warning: '#ffc884', pro: '#c8a6ff' },
+    anchors: { 'surface-0': '#2a1c26', 'surface-1': '#30212c', 'surface-2': '#362632', 'surface-3': '#3c2b38', 'text-primary': '#fbeef0', 'text-secondary': '#e0ccd4', 'text-muted': '#ab96a2' },
+  },
+  {
     name: 'machine-rising',
     label: 'Machine Rising',
     description: 'A chrome robot endoskeleton with a pulsing red eye looms over a burning future city: searchlights sweep the smoke, hunter drones cross, laser fire flashes, and embers rise.',
@@ -619,6 +639,18 @@ export const THEMES = [
     opacity: 0.6,
     roles: { accent: '#8839ef', danger: '#d20f39', success: '#40a02b', warning: '#df8e1d', pro: '#7287fd' },
     anchors: { 'surface-0': '#e6e9ef', 'surface-1': '#eff1f5', 'surface-2': '#f7f8fa', 'text-primary': '#4c4f69', 'text-secondary': '#5c5f77', 'text-muted': '#6c6f85' },
+  },
+  {
+    // A light theme with a moving scene: needs the app in light mode.
+    name: 'sky-islands',
+    label: 'Sky Islands',
+    mode: 'light',
+    description: "A light theme: grassy islands float in a bright sky, 16-bit style, with a cottage, a turning windmill, waterfalls spilling into a sea of clouds, an airship drifting by, and birds.",
+    alt: "Pixel-art floating islands in a bright blue sky with a cottage, a windmill, waterfalls into clouds, and an airship",
+    tint: '#f2f7fc',
+    opacity: 0.6,
+    roles: { accent: '#2a78c8', danger: '#c53030', success: '#2f855a', warning: '#b7791f', pro: '#6b46c1' },
+    anchors: { 'surface-0': '#e8f0f8', 'surface-1': '#f2f7fc', 'surface-2': '#f9fbfe', 'text-primary': '#1c2836', 'text-secondary': '#3c4a5c', 'text-muted': '#56657a' },
   },
   {
     // A light theme with a moving scene: needs the app in light mode.

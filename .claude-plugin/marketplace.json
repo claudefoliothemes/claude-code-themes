@@ -463,6 +463,30 @@
       }
     },
     {
+      "name": "sky-islands",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/sky-islands-0.1.0.zip",
+        "sha256": "bf54d1e22960180c6e146bde999abd846333bd7ab06b683dad494442e2a68235"
+      }
+    },
+    {
+      "name": "snowy-bookshop",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/snowy-bookshop-0.1.0.zip",
+        "sha256": "0d0f3e54729fc044375e2d560dfb0ef7a1debc987691ed060162d2faba9baef8"
+      }
+    },
+    {
+      "name": "after-school",
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/claudefoliothemes/claude-code-themes/releases/download/v0.1.0/after-school-0.1.0.zip",
+        "sha256": "c8da93d32698db60f6f726e847cf4478ba9d3660b094a64ae30142fb072b2cc9"
+      }
+    },
+    {
       "name": "morning-light",
       "source": {
         "source": "archive",
