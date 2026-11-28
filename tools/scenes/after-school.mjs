@@ -77,7 +77,7 @@ export default function scene() {
   px.rect(186, 154, 14, 7, '#3a3a5a'); px.rect(186, 154, 14, 2, '#4a4a6e'); px.rect(191, 152, 4, 2, '#2a2a44')
 
   // A student standing at the middle window, looking out, seen from behind; long hair stirs.
-  const SX = 88, SY = 98
+  const SX = 88, SY = 103
   sprite(px, SX, SY, [
     '................',
     '................',
@@ -114,7 +114,12 @@ export default function scene() {
     'ssSssSssSssSssSs',
     '..llll....llll..',
     '..llll....llll..',
+    '..llll....llll..',
+    '..llll....llll..',
     '..LLLL....LLLL..',
+    '..dddd....dddd..',
+    '..dddd....dddd..',
+    '..dddd....dddd..',
     '..dddd....dddd..',
     '..dddd....dddd..',
     '..dddd....dddd..',
@@ -123,6 +128,8 @@ export default function scene() {
     '.ooooo...ooooo..',
   ], { c: '#2a2e4a', w: '#f4ece0', b: '#f2ece6', h: '#f0c8a8', s: '#2e3250', S: '#232640', l: '#f0c8a8', L: '#d8a888', d: '#24263a', o: '#5a3a2a' })
   for (let y = SY + 19; y < SY + 27; y++) { px.set(SX + 1, y, '#d8d0c8'); px.set(SX + 14, y, '#d8d0c8') }
+  // A soft contact shadow where her shoes meet the floor.
+  px.rect(SX, SY + 47, 16, 1, '#5a3a30'); px.rect(SX + 2, SY + 48, 12, 1, '#6a4436')
   const hair = [0, 1].map((k) => {
     const g = layer()
     for (let y = 0; y < 22; y++) {

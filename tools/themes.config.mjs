@@ -539,6 +539,8 @@ export const THEMES = [
   {
     name: 'after-school',
     label: 'After School',
+    // 0.1.1: the student stands on the floor (longer legs, a contact shadow).
+    version: '0.1.1',
     description: "An empty classroom at sunset, anime style: curtains billow, golden light falls across the desks, cherry petals drift in, and a student stands at the window looking out while the clock ticks.",
     alt: "Pixel-art anime classroom at sunset with tall windows, a cherry tree outside, desks in golden light, a chalkboard with doodles, and a student at the window",
     tint: '#2a1c26',
