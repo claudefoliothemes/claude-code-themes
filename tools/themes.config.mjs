@@ -561,7 +561,9 @@ export const THEMES = [
   {
     name: 'nyc-skyline',
     label: 'NYC Skyline',
-    description: "The New York skyline at dusk, 16-bit style: the Statue of Liberty with her torch flickering, One World Trade, the Empire State Building cycling red, white, and blue, the Chrysler crown, and the Billionaires' Row towers, with a ferry crossing the harbor.",
+    // 0.1.1: redrawn cleaner (hazy depth layers, orderly windows, calm water) with a small, distant statue.
+    version: '0.1.1',
+    description: "The New York skyline at dusk, 16-bit style: One World Trade, the Empire State Building cycling red, white, and blue, the Chrysler crown, and the Billionaires' Row towers across a calm harbor, with the Statue of Liberty on her island and a ferry crossing.",
     alt: 'Pixel-art New York skyline at dusk with the Statue of Liberty, One World Trade, the Empire State Building, the Chrysler Building, slender Billionaires Row towers, and an orange ferry on the water',
     tint: '#12142c',
     opacity: 0.5,
